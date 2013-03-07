@@ -22,11 +22,11 @@ tags: [js, html]
 function htmlEncode(str) {
 	var div = document.createElement("div");
 	div.appendChild(document.createTextNode(str));
-    return div.innerHTML;
+	return div.innerHTML;
 }
 
 function htmlDecode(str) {
-	var div = document.createElement("div");
+    var div = document.createElement("div");
     div.innerHTML = str;
     return div.innerHTML;
 }
