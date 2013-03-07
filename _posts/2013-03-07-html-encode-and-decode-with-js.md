@@ -20,9 +20,9 @@ tags: [js, html]
 
 <script type="text/javascript">
 function htmlEncode(str) {
-	var div = document.createElement("div");
-	div.appendChild(document.createTextNode(str));
-	return div.innerHTML;
+    var div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
 }
 
 function htmlDecode(str) {
