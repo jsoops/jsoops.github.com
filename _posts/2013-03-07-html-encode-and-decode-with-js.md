@@ -38,3 +38,7 @@ console.log(htmlEncode(str));
 </body>
 </html>
 {% endhighlight %}
+
+Jekyll 是我用过的最好的博客引擎！
+
+全文完。
