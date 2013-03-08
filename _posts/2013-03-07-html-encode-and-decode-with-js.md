@@ -7,7 +7,7 @@ tags: [js, html]
 ---
 {% include JB/setup %}
 
-一个简单的例子，技巧性很强，在没有 Web Developer Tools 的时候，可临时启用。
+一个简单的例子，转义小段 HTML 代码，技巧性很强，在没有 Web Developer Tools 的时候，可临时启用。
 
 {% highlight html %}
 <!doctype html>
