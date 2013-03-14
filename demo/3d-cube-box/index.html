@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网友Adam、分享CSS3学习笔记之立体盒子</title>
+<meta name="Keywords" content="网友Adam、分享CSS3学习笔记之立体盒子,Jquery插件,Jquery原创,Jquery资源,Jquery特效,js特效,div+css,JquerySchool" />
+<meta name="description" content="JquerySchool是一个专门分享jquery资源、jquery插件、jquery特效的一个网站,完全开放源代码,把实际开发中应用最多、最实用的Jquery资源抽取出来再加以精心编排,让广大网友能以最短的时间、花最少的精力去真正掌握jQuery开发的知识。" />
+
+<style>
+* { margin:0; padding:0; list-style:none; }
+
+body { background:#ccc; }
+
+#box_before:before,#box_right:before{ background:rgba(0,0,0,0); display:block; height:240px; width:240px; content:" "; }
+
+#stage { 
+	height: 300px; width:300px; margin: 0 auto; position:relative; top:60px; left:-100px;
+}
+
+#box_before,#box_back,#box_left,#box_right,#box_top,#box_bottom {
+	height:240px;
+	width:240px;
+	text-align:center;
+	font-weight:bolder;
+	color:#fff;
+	font-size:60px;
+	position:absolute;
+	-webkit-transform-origin:right top;
+	-moz-transform-origin:right top;
+	-ms-transform-origin:right top;
+	-o-transform-origin:right top;
+	transform-origin:right top;
+	box-shadow:0 0 2px rgba(50,50,50,0.1);
+}
+#box_back {
+	left:240px;
+	top:88px;
+	background:-webkit-linear-gradient( top,rgba(255,255,255,0.1),rgba(0,0,0,0.1) );
+	background:-moz-linear-gradient( top,rgba(255,255,255,0.1),rgba(0,0,0,0.1) );
+	background:-ms-linear-gradient( top,rgba(255,255,255,0.1),rgba(0,0,0,0.1) );
+	background:-o-linear-gradient( top,rgba(255,255,255,0.1),rgba(0,0,0,0.1) );
+	background:linear-gradient( top,rgba(255,255,255,0.1),rgba(0,0,0,0.1) );
+	-webkit-transform:skew( 0deg,20deg );
+	-moz-transform:skew( 0deg,20deg );
+	-ms-transform:skew( 0deg,20deg );
+	-o-transform:skew( 0deg,20deg );
+	transform:skew( 0deg,20deg );
+}
+#box_left {
+	background:-webkit-linear-gradient( top,rgba(255,255,255,0.1),rgba(0,0,0,0.1) );
+	background:-moz-linear-gradient( top,rgba(255,255,255,0.1),rgba(0,0,0,0.1) );
+	background:-ms-linear-gradient( top,rgba(255,255,255,0.1),rgba(0,0,0,0.1) );
+	background:-o-linear-gradient( top,rgba(255,255,255,0.1),rgba(0,0,0,0.1) );
+	background:linear-gradient( top,rgba(255,255,255,0.1),rgba(0,0,0,0.1) );
+	-webkit-transform:skew( 0deg,-20deg );
+	-moz-transform:skew( 0deg,-20deg );
+	-ms-transform:skew( 0deg,-20deg );
+	-o-transform:skew( 0deg,-20deg );
+	transform:skew( 0deg,-20deg );
+}
+#box_bottom {
+	width:218px;
+	top:240px;
+	left:19px;
+	background:#b9b9b9;
+	-webkit-transform:rotate( -50deg ) skew( 20deg,30deg );
+	-moz-transform:rotate( -50deg ) skew( 20deg,30deg );
+	-ms-transform:rotate( -50deg ) skew( 20deg,30deg );
+	-o-transform:rotate( -50deg ) skew( 20deg,30deg );
+	transform:rotate( -50deg ) skew( 20deg,30deg );
+}
+#box_before {
+	left:0;
+	top:174px;
+	background:rgba(232,232,232,.7);
+	-webkit-transform:skew( 0deg,20deg );
+	-moz-transform:skew( 0deg,20deg );
+	-ms-transform:skew( 0deg,20deg );
+	-o-transform:skew( 0deg,20deg );
+	transform:skew( 0deg,20deg );
+	-webkit-transition:all 300ms ease;
+	-moz-transition:all 300ms ease;
+	-ms-transition:all 300ms ease;
+	-o-transition:all 300ms ease;
+	transition:all 300ms ease;
+}
+#box_before:hover {
+	-webkit-transform:skew( 0deg,0deg );
+	-moz-transform:skew( 0deg,0deg );
+	-ms-transform:skew( 0deg,0deg );
+	-o-transform:skew( 0deg,0deg );
+	transform:skew( 0deg,0deg );
+}
+#box_right {
+	left:240px;
+	top:87px;
+	background:rgba(232,232,232,.7);
+	-webkit-transform:skew( 0deg,-20deg );
+	-moz-transform:skew( 0deg,-20deg );
+	-ms-transform:skew( 0deg,-20deg );
+	-o-transform:skew( 0deg,-20deg );
+	transform:skew( 0deg,-20deg );
+	-webkit-transition:all 300ms ease;
+	-moz-transition:all 300ms ease;
+	-ms-transition:all 300ms ease;
+	-o-transition:all 300ms ease;
+	transition:all 300ms ease;
+}
+#box_right:hover {
+	-webkit-transform-origin:left;
+	-moz-transform-origin:left;
+	-ms-transform-origin:left;
+	-o-transform-origin:left;
+	transform-origin:left;
+	-webkit-transform:skew( 0deg,-20deg );
+	-moz-transform:skew( 0deg,-20deg );
+	-ms-transform:skew( 0deg,-20deg );
+	-o-transform:skew( 0deg,-20deg );
+	transform:skew( 0deg,-20deg );
+}
+#box_top {
+	width:220px;
+	top:-0;
+	left:19px;
+	background:rgba(216,216,216,.95);
+	-webkit-transform:rotate( -50deg ) skew( 20deg,30deg );
+	-moz-transform:rotate( -50deg ) skew( 20deg,30deg );
+	-ms-transform:rotate( -50deg ) skew( 20deg,30deg );
+	-o-transform:rotate( -50deg ) skew( 20deg,30deg );
+	transform:rotate( -50deg ) skew( 20deg,30deg );
+	-webkit-transition:all 300ms ease;
+	-moz-transition:all 300ms ease;
+	-ms-transition:all 300ms ease;
+	-o-transition:all 300ms ease;
+	transition:all 300ms ease;
+}
+#box_top:hover {
+	top:-80px;
+}
+#box_before:before,#box_right:before {
+	-webkit-transform:translate(0px,242px);
+	-moz-transform:translate(0px,242px);
+	-ms-transform:translate(0px,242px);
+	-o-transform:translate(0px,242px);
+	transform:translate(0px,242px);
+	background:-webkit-linear-gradient(top,rgba(255,255,255,0.2),rgba(255,255,255,0.3) 2%,rgba(255,255,255,0) 50%,rgba(255,255,255,0));
+	background:-moz-linear-gradient(top,rgba(255,255,255,0.2),rgba(255,255,255,0.3) 2%,rgba(255,255,255,0) 50%,rgba(255,255,255,0));
+	background:-ms-linear-gradient(top,rgba(255,255,255,0.2),rgba(255,255,255,0.3) 2%,rgba(255,255,255,0) 50%,rgba(255,255,255,0));
+	background:-o-linear-gradient(top,rgba(255,255,255,0.2),rgba(255,255,255,0.3) 2%,rgba(255,255,255,0) 50%,rgba(255,255,255,0));
+	background:linear-gradient(top,rgba(255,255,255,0.2),rgba(255,255,255,0.3) 2%,rgba(255,255,255,0) 50%,rgba(255,255,255,0));
+}
+#box_before:before {
+	width:240px;
+	left:1px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+<h1 style="margin:0 auto; margin-top:30px; width:800px; text-align:center; text-shadow:1px 1px 0px #eee; color:rgba( 0,0,0,.8 );"> Adam CSS3 立体盒子（ 鼠标划过盒子试试 ） </h1>
+<dl id="stage">
+    <dd id="box_back"></dd>
+    <dd id="box_bottom"></dd>
+    <dd id="box_left"></dd>
+    <dd id="box_before"></dd>
+    <dd id="box_top"></dd>
+    <dd id="box_right"></dd>
+</dl>
+</body>
+</html>
