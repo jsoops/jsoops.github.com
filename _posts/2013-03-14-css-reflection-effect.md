@@ -7,7 +7,7 @@ tags: [css, reflection]
 ---
 {% include JB/setup %}
 
-CSDN 网友 [afeiqiang](http://blog.csdn.net/afeiqiang/article/details/8441618)原创文章，无需 Flash，完全用 CSS 就可以做出超炫的图片倒影效果，能够兼容firefox、chrome、IE等各主流浏览器。
+CSDN 网友 [afeiqiang](http://blog.csdn.net/afeiqiang/article/details/8441618) 原创文章，无需 Flash，完全用 CSS 就可以做出超炫的图片倒影效果，能够兼容firefox、chrome、IE等各主流浏览器。
 
 悉心学习下：
 
