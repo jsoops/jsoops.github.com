@@ -9,11 +9,15 @@ tags: [table, html]
 
 ## 引言
 
+----
+
 本周的茶话会，谈到边框为 1 像素的表格，这里延伸一下。
 
 在 [xthml](http://www.w3school.com.cn/xhtml/index.asp) 流行之前，[table](http://www.w3school.com.cn/tags/tag_table.asp) 可谓 HTML 里的悍将，展示数据是它，页面布局也用它。我在做游戏编辑的时候，号称会切图，其实就是 table 布局。
 
 ## 表格
+
+----
 
 **定义和用法**
 
@@ -76,6 +80,8 @@ thead、 tfoot 以及 tbody 元素使您有能力对表格中的行进行分组�
 
 ## 1 像素表格
 
+----
+
 转做开发之后，时不时的要做一些 demo 页面，需要用到 table 展示数据，最初还不懂用 CSS 框架，bootstrap 也还未诞生，于是到处搜索：
 
 `CSS 1 像素表格`
@@ -118,6 +124,8 @@ td {border: 1px solid #999; padding: 5px}
 也有高人：[Practical CSS3 Tables with Rounded Corners](http://www.red-team-design.com/practical-css3-tables-with-rounded-corners)
 
 ## CSS3 圆角表格
+
+----
 
 特点：
 
@@ -236,6 +244,8 @@ $(".zebra tbody tr:even").addClass('alternate');
 该样式为偶数行添加效果。
 
 
-[在线演示](/demo/tables-with-rounded-corners/index.html) 未加 JS 增强。
+[在线演示](/demo/tables-with-rounded-corners/index.html) 
+
+注：未加 JS 增强。
 
 全文完。
