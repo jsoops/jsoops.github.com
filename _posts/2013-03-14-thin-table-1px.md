@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "从边框为 1 像素的表格说起 TBC"
+title: "从边框为 1 像素的表格说起"
 description: ""
 category: html
 tags: [table, html]
