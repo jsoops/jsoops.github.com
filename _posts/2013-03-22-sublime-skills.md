@@ -373,6 +373,8 @@ Find the file Sublime Text 2.icns and replace with the one from this repository.
 
 [soda-theme](https://github.com/buymeasoda/soda-theme)
 
+[phoenix-theme](https://github.com/netatoo/phoenix-theme)
+
 Light 版本，很清爽
 
 再配合 Mac Classic 的配色方案，很赞，没那么压抑了。
