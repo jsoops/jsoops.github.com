@@ -54,6 +54,9 @@ Download [Package Control.sublime-package](http://sublime.wbond.net/Package%20Co
 
 * [Alignment](http://wbond.net/sublime_packages/alignment)  `control + command + A` 对齐
 
+* [PlainTasks](https://github.com/aziz/PlainTasks) A Simple TODOList
+
+
 还有各种格式化 HTML JS 的插件，没有太多的高下之后，找自己喜欢的。
 
 更多插件，见这两篇文章：
@@ -373,11 +376,70 @@ Find the file Sublime Text 2.icns and replace with the one from this repository.
 
 [soda-theme](https://github.com/buymeasoda/soda-theme)
 
+{% highlight javascript %}
+{
+  "color_scheme": "Packages/Theme - Soda/Color Schemes/Monokai Soda.tmTheme",
+  "font_size": 14,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "theme": "Soda Dark.sublime-theme"
+}
+
+//or
+
+{
+    "theme": "Soda Light.sublime-theme",
+    "soda_classic_tabs": true
+}
+
+{% endhighlight %}
+
+Colour Schemes
+
+* Download colour-schemes.zip
+* Unzip and place the extracted tmtheme files in the Sublime Text 2 Packages/User folder
+* Enable the colour scheme via Preferences -> Color Scheme -> User
+
+[aqua-theme](https://github.com/cafarm/aqua-theme) ✓
+
+{% highlight javascript %}
+{
+  "color_scheme": "Packages/Theme - Aqua/Color Schemes/Espresso Aqua.tmTheme",
+  "font_size": 14,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "theme": "AppKit.sublime-theme"
+}
+{% endhighlight %}
+
+
 [phoenix-theme](https://github.com/netatoo/phoenix-theme)
 
-Light 版本，很清爽
+{% highlight javascript %}
+{
+  "color_scheme": "Packages/Theme - Aqua/Color Schemes/Monokai Aqua.tmTheme",
+  "font_size": 14,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "phoenix_color_expanded_folder": true,
+  "phoenix_color_green": true,
+  "phoenix_dirty_bottom_bar": true,
+  "phoenix_dirty_bottom_bar_red": true,
+  "phoenix_eighties": true,
+  "phoenix_highlight_current_tab": true,
+  "phoenix_sidebar_tree_large": true,
+  "phoenix_solid_current_tab": true,
+  "theme": "Phoenix Dark.sublime-theme"
+}
+{% endhighlight %}
 
-再配合 Mac Classic 的配色方案，很赞，没那么压抑了。
+----
 
 下面这个文章，很全面：
 
