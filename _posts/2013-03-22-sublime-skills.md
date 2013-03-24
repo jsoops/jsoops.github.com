@@ -457,7 +457,7 @@ Colour Schemes
 
 下面这个文章，很全面：
 
-[http://www.cppblog.com/biao/archive/2012/01/15/164215.aspx](http://www.cppblog.com/biao/archive/2012/01/15/164215.aspx)
+[Lucifr Sublime Text 2 入门及技巧](http://lucifr.com/2011/08/31/sublime-text-2-tricks-and-tips/)
 
 持续学习中。
 
