@@ -72,7 +72,7 @@ $ cd project
 
 生成文件的速度，真可谓秒杀！！！
 
-详细的配置和使用，见这里 [http://zespia.tw/hexo/zh-CN/docs/](http://zespia.tw/hexo/zh-CN/docs/)
+详细的配置和使用，见这里 <http://zespia.tw/hexo/zh-CN/docs/>
 
 ----
 
