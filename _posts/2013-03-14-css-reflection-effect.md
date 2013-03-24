@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "兼容各浏览器的CSS倒影效果"
-description: "兼容各浏览器的CSS倒影效果"
+description: "<p>CSDN 网友 <a href='http://blog.csdn.net/afeiqiang/article/details/8441618' target='_blank'>afeiqiang</a> 原创文章，无需 Flash，完全用 CSS 就可以做出超炫的图片倒影效果，能够兼容firefox、chrome、IE等各主流浏览器。</p><p><a href='/demo/css-reflection/index.html' target='_blank'>在线演示</a></p><p>图片选材不太好，如果是黑底儿的图，效果更好。</p><p>CSS 值得每一个程序员学习！</p>"
 category: css
 tags: [css, reflection]
 ---

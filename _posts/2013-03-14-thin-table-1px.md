@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "从边框为 1 像素的表格说起"
-description: ""
+description: "<p>本周的茶话会，谈到边框为 1 像素的表格，这里延伸一下。</p><p>在<a href='http://www.w3school.com.cn/xhtml/index.asp'>xthml</a> 流行之前，<a href='http://www.w3school.com.cn/tags/tag_table.asp'>table</a> 可谓 HTML 里的悍将，展示数据是它，页面布局也用它。我在做游戏编辑的时候，号称会切图，其实就是 table 布局。</p><p>关于 1 像素表格， 网上有很多的实现方案，最初我把这个问题复杂化了。</p><p>BootStrap 可以轻松实现美观大方的表格，多种样式可选。</p><p>但本篇的重点，是如何手工实现类似 BootStrap 表格的效果。</p><p>表格，还是很重要。</p>"
 category: html
 tags: [table, html]
 ---

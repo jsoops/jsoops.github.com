@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "网页安全颜色名称一览表"
-description: "所有浏览器都支持的颜色一览表"
+description: "<p>今天尝试给 Sublime Text 2 的一款插件配色，发现 <a href='http://www.w3schools.com/' target='_blank'>www.w3schools.com</a> 的这个页面，颜色对 Web 的重要性，不必多言，先记录一个入口，保持关注。</p><p>网页设计已经渐渐走向成熟，我们已经习惯了各种各样、让人眼花缭乱的动画以及图片，而如果现在哪个网站毫无修饰，必定会很快地被人遗忘。</p><p>而正因为各种各样的网站大量地涌现，要如何在这些网站中脱颖而出，显得与众不同呢？</p><p>颜色，当然是颜色！</p><p>不需要太多的图片，也不需要花哨的装饰，好的颜色搭配就会让人眼前一亮。</p>"
 category: html
 tags: [color, html, browser]
 ---
