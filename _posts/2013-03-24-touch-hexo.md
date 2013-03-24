@@ -13,7 +13,7 @@ tags: [blog, nodejs]
 
 Mac 平台下安装 hexo 非常简单：
 
-`node -v`
+`$ node -v`
 
 输出：v0.8.16
 
@@ -47,27 +47,28 @@ Mac 平台下安装 hexo 非常简单：
 
 **安装**
 
-`sudo npm install -g hexo`
+`$ sudo npm install -g hexo`
 
 **开始**
 
 建立项目：
 
-`hexo init project`
-
-`cd project`
+```
+$ hexo init project
+$ cd project
+```
 
 建立新文章：
 
-`hexo new "New Post"`
+`$ hexo new "New Post"`
 
 生成静态文件：
 
-`hexo generate`
+`$ hexo generate`
 
 启动服务器：
 
-`hexo server`
+`$ hexo server`
 
 生成文件的速度，真可谓秒杀！！！
 
