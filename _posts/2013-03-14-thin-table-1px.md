@@ -78,6 +78,12 @@ thead、 tfoot 以及 tbody 元素使您有能力对表格中的行进行分组�
 
 有两种方式来使用 colgroup 标签：一种是对几个同样的列进行简单的定义，另一种是将几个不同的列组合起来。
 
+w3c 参考文档：
+
+<http://www.w3.org/TR/html401/struct/tables.html>
+
+<http://www.w3.org/TR/2004/WD-xhtml2-20040722/mod-tables.html>
+
 ## 1 像素表格
 
 ----
