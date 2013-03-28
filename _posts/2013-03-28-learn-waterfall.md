@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "学习 瀑布流"
-description: "<p>瀑布流的概念，很早就开始流行了，但公司一直没有相关的项目，所以从来都是一知半解。</p><p>两周之前，一个活动提出瀑布流的需求，虽然最终并未上线，但是却给了我们一个仔细研究瀑布流的机会。</p><p>参考资源：</p><p><a href='http://ued.taobao.com/blog/2011/09/waterfall/' target='_blank'>瀑布流布局浅析</a></p><p><a href='http://docs.kissyui.com/docs/html/api/component/waterfall/' target='_blank'>Kissy Waterfall</a></p>"
+description: "<p>瀑布流的概念，很早就开始流行了，但公司一直没有相关的项目，所以从来都是一知半解。</p><p>两周之前，一个活动提出瀑布流的需求，虽然最终并未上线，但是却给了我们一个仔细研究瀑布流的机会。</p><p>参考资源：</p><p><a href='http://docs.kissyui.com/docs/html/api/component/waterfall/' target='_blank'>Kissy Waterfall</a></p><p><a href='http://ued.taobao.com/blog/2011/09/waterfall/' target='_blank'>瀑布流布局浅析</a></p>"
 category: javascript
 tags: [waterfall]
 ---
