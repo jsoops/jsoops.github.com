@@ -25,35 +25,56 @@ HTML 代码：
 
 CSS 代码：
 
-{%highlight css%}
-body{background:#000;color:#f00;}  
-.wrap{position:relative;}  
-.image{margin-bottom:3px;}  
-.down{position: relative;}  
-.reflection{width:450px;
-    height:180px;
-    background:url("images/twitter-bird.jpg") bottom center no-repeat;  
-    -webkit-transform: scaleY(-1);  
-    -moz-transform: scaleY(-1);  
-    -ms-transform: scaleY(-1);  
-    -o-transform: scaleY(-1);  
-    transform: scaleY(-1);  
-    opacity:0.5;       
-    filter:flipv alpha(opacity='50');     /*ALL IE*/  
-}  
-@media all and (min-width:0) {  
-    .reflection{filter:alpha(opacity='50') \0/;} /*IE9*/  
-}  
-.overlay{position: relative;
-    width:450px;
-    height:180px;
-    bottom:149px;  
-    background-image: -moz-linear-gradient(center bottom, rgb(0,0,0) 20%, rgba(0,0,0,0) 90%);  
-    background-image: -o-linear-gradient(rgba(0,0,0,0) 10%, rgb(0,0,0) 30%);  
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.20, rgb(0,0,0)), color-stop(0.90, rgba(0,0,0,0)));  
-    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColor=0, EndColorStr=#000000);  
+```css
+body {
+    background: #000;
+    color: #f00;
 }
-{%endhighlight%}
+
+.wrap {
+    position: relative;
+}
+
+.image {
+    margin-bottom: 3px;
+}
+
+.down {
+    position: relative;
+}
+
+.reflection {
+    width: 450px;
+    height: 180px;
+    background: url("images/twitter-bird.jpg") bottom center no-repeat;
+    -webkit-transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    opacity: 0.5;
+    filter: flipv alpha(opacity='50');
+     /*ALL IE*/
+}
+
+@media all and (min-width:0) {
+  
+    .reflection {
+        filter: alpha(opacity='50') \0/;
+    } /*IE9*/
+}
+
+.overlay {
+    position: relative;
+    width: 450px;
+    height: 180px;
+    bottom: 149px;
+    background-image: -moz-linear-gradient(center bottom, rgb(0,0,0) 20%, rgba(0,0,0,0) 90%);
+    background-image: -o-linear-gradient(rgba(0,0,0,0) 10%, rgb(0,0,0) 30%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.20, rgb(0,0,0)), color-stop(0.90, rgba(0,0,0,0)));
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColor=0, EndColorStr=#000000);
+}
+```
 
 [在线演示](/demo/css-reflection/index.html)
 
