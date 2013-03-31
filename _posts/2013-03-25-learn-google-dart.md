@@ -23,6 +23,8 @@ Intellij Web 项目则提示：
 
 `Do not know how to load 'dart:html'`
 
+>3月31日补：启动 Dart Editor 之后，可用浏览器访问 http://localhost:3030/ 测试效果，IDE 会即时编译。
+
 只能玩玩儿命令行程序，在控制台输入：
 
 `Hello, 阿三！`
