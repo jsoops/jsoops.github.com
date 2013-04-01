@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bootstrap Enhanced Library"
-description: "<p>爱美乃人之天性，但是我的 CSS 一直是硬伤，去年花了一点时间学习 <a href='http://www.blueprintcss.org/' target='_blank'>Blueprint</a>，但是在发现 Bootstrap 之后，立马放弃 Blueprint，这个框架太适合我了！</p><p>伴随着 Bootstrap 的流行，也先后出了很多增强的组件，比如 <a href='http://www.eyecon.ro/Bootstrap-datepicker/' target='_blank'>日历选择器</a>，也很火爆，以至于我都不知道 GitHub 之上，哪个是原版了。但毕竟没有项目需求，也没有太关注。</p><p>但是今天发现的两个增强，的确亮瞎双眼了：Flat-UI 和 Bootstrap IE6 Compatible Library</p>"
+description: "<p>爱美乃人之天性，但是我的 CSS 一直是硬伤，去年花了一点时间学习 <a href='http://www.blueprintcss.org/' target='_blank'>Blueprint</a>，但是在发现 Bootstrap 之后，立马放弃 Blueprint，这个框架太适合我了！</p><p>伴随着 Bootstrap 的流行，也先后出了很多增强的组件，比如 <a href='http://www.eyecon.ro/Bootstrap-datepicker/' target='_blank'>日历选择器</a>，也很火爆，以至于我都不知道 GitHub 之上，哪个是原版了。但毕竟没有项目需求，也没有太关注。</p><p>但是今天发现的两个增强，的确亮瞎双眼了：Flat-UI 和 Bootstrap IE6 Compatible Library。</p>"
 category: Bootstrap
 tags: [library, Bootstrap]
 ---
