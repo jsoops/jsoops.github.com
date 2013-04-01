@@ -204,3 +204,102 @@ tags: [css, layout]
 </body>
 </html>
 ```
+### 4. 继续学习最简单的 Layout
+
+昨天管理了下 [Learn Perl in about 2 hours 30 minutes](http://www.chenzixin.com/porgram/2013/03/28/learn-perl-in-about-2-hours-30-minutes/)，最初是想全文转为 MarkDown，后来发现工作量太大了，而且为了显示美观，必须加两端对齐，还是有HTML片段。
+
+于是放弃，只给原页面加了 BootStrap 的样式，限制了 body 的宽度为 960px, 并居中对齐。
+
+```html
+body {
+	padding: 2em;
+	font-family: Tahoma;
+	width: 960px;
+	margin: auto;
+}
+```
+原来居中这么简单啊！
+
+和英文两端对齐：
+
+```css
+p{
+	text-align:justify; text-justify:inter-ideograph;
+}
+```
+上周熬夜看 Conflunce 的官方文档，路遇几次服务器维护，出错页面的样式也不错，简单大方，代码：
+
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <title>Site undergoing maintenance</title>
+
+  <style type="text/css">
+
+  body { -webkit-transform: rotate(-8deg); }
+
+    .content {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      padding-bottom: 5px;
+    }
+
+    .info {
+      font-size: 24px;
+      color: #003366;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 0px;
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    .message {
+      margin: auto;
+      margin-top: 120px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border: 1px solid #3C78B5;
+      width: 500px;
+    }
+
+    .signiture {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-style: italic;
+      color: #999999;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="message">
+
+    <p class="info">Sorry Mate!</p>
+
+    <p class="content">
+      It looks like you caught us doing some system maintenance. We upgrade 
+often to test out new features and make sure you'll really like them. So 
+please try again soon.
+    </p>
+
+    <p class="signiture">The Atlassian Team</p>
+
+  </div>
+
+</body>
+</html>
+```
+
+包含一段让页面倾斜的CSS：
+
+```css
+body { -webkit-transform: rotate(-8deg); }
+```
+
+OSchina 的愚人节礼物。

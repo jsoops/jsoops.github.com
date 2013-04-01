@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?autoload=true&amp;skin=default&amp;lang=css" defer="defer"></script>
+	<style type="text/css">
+		body {
+			width: 960px;
+			margin: auto;
+		}
+		.progress-bar {
+			background-color:#efefef;
+			width:500px;
+			height:16px;
+			box-shadow:inset 0 0 1px 0 #000;
+		}
+
+		.progress-bar span {
+			display:inline-block;
+			height:16px;
+		}
+
+		.green span{
+			background-image:-webkit-gradient(linear,0% 0%,0% 100%,from(#4bb444),to(#30a72f));
+			background-image:-moz-linear-gradient(-90deg,#4bb444,#30a72f);
+		}
+
+		a:hover {
+			color: #005580;
+			text-decoration: underline;
+		}
+		a:hover, a:active {
+			outline: 0;
+		}
+		a {
+			color: #0088cc;
+			text-decoration: none;
+		}
+		user agent stylesheeta:-webkit-any-link {
+			color: -webkit-link;
+			text-decoration: underline;
+			cursor: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Progress Demo</h1>
+	<div class="progress-bar green">
+		<span style="width:30%;"></span>
+	</div>
+	<h1>Code</h1>
+	<h3>HTML</h3>
+	<pre class="prettyprint linenums">
+&lt;div class="progress-bar green">&lt;span style="width:30%;">&lt;/span>&lt;/div>		
+	</pre>
+	<h3>CSS</h3>
+	<pre class="prettyprint linenums lang-java">
+.progress-bar {
+	background-color:#efefef;
+	width:500px;
+	height:16px;
+	box-shadow:inset 0 0 1px 0 #000;
+}
+
+.progress-bar span {
+	display:inline-block;
+	height:16px;
+}
+
+.green span{
+	background-image:-webkit-gradient(linear,0% 0%,0% 100%,from(#4bb444),to(#30a72f));
+	background-image:-moz-linear-gradient(-90deg,#4bb444,#30a72f);
+}
+	</pre>
+	<footer>
+		Pretty print by
+		<a href="https://code.google.com/p/google-code-prettify/">google-code-prettify</a>.
+	</footer>
+</body>
+</html>
