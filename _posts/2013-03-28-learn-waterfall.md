@@ -50,6 +50,8 @@ tags: [waterfall]
 
 以上内容摘自 [百度百科](http://baike.baidu.com/view/7151782.htm)
 
+实例：[戳这里](/demo/waterfall/index.html) 图片来自百度。
+
 待续...
 
 ----
