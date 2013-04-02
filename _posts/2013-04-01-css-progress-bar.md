@@ -27,14 +27,11 @@ Java.next(): Groovy or Scala ?
 
 唉，贪婪的本性又我把带到沟里去了，我是要说 CSS Progress Bar 的！
 
-点击[这里](/demo/progressbar/index.html)看效果，代码也贴出来了。
+点击 [这里](/demo/progressbar/index.html) 看效果，代码也贴出来了。
+
+如果要兼容 IE6 看这个 [Demo](/demo/progressbar/index.html)
 
 [Google Code Prettify](https://code.google.com/p/google-code-prettify/) 作为轻量级的代码着色工具，真的很不错！
 
 <blockquote class="warning">
 重要：如果我早知道 Bootstrap 自带了 Progress Bar，我也不会写这几行代码。</blockquote>
-
-
-
-
-
