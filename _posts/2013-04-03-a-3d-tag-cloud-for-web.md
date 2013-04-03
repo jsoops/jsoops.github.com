@@ -37,6 +37,21 @@ On product, they said, “If we present them in a slipshod manner, they will be 
 
 ### 如何去实现
 
+http://plugins.svn.wordpress.org/wp-cumulus/
+
+
+http://agiledon.github.com/
+
+http://www.roytanck.com/
+
+http://wordpress.org/extend/plugins/wp-cumulus/
+
+http://wordpress.org/extend/plugins/wp-cumulus/developers/
+
+http://wordpress.com/  這個要架梯子才能出去
+
+
+
 ### 还可以优化吗
 
 
