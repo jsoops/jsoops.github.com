@@ -15,6 +15,16 @@ Dart brings structure to web app engineering with a new language, libraries, and
 
 Dart is a class-based, object-oriented language with lexical scoping, closures, and optional static typing. Dart helps you build structured modern web apps and is easy to learn for a wide range of developers.
 
+>Google 的开发人员似乎热衷于开发新的编程语言，而且每一次新的语言都很造成比较大的影响。前不久，Google 的开发人员发布了新的编程语言 Dart。Dart 语言的目标是创建结构化的 Web 应用。在使用方式上类似 Node.js 和 GWT，即在服务器端和客户端采用相同的编程语言。在 Node.js 中，都是使用的 JavaScript；在 GWT 中则是以 Java 为主；而 Dart 则更像是升级版的 GWT ，只是用了一种设计更好的语言来替代 Java。在服务器端，Dart 运行在虚拟机（DartVM）之上；而在浏览器端，则转换成 JavaScript 来执行。
+
+<p></p>
+>在语法上，Dart 像是 Scala 和 JavaScript 的一个结合体。Dart 中有类和接口的概念，同时类型声明是可选的。在 Dart 中，变量的类型声明是可选的。这么设计的出发点是让开发人员可以根据开发的不同阶段以及应用的类型来选择合适的类型声明策略。在初期的原型开发阶段或是开发小型应用时，使用动态类型是一个不错的选择；而对于复杂的模块化的大型应用来说，采用静态类型则是一个更好的做法。Dart 并不对类型声明的选择做出限制。
+
+<p></p>
+>值得一提的是 Dart 的并发编程模型。Dart 程序在运行时总是单线程的，这点类似 JavaScript。并发性是通过类似 Actor 的隔离体（isolate）来完成的。每个隔离体是一个并发运行的单元，有自己的内存和执行逻辑。隔离体之间通过消息传递来进行通讯。Dart 中的隔离体与 HTML5 中的 Web Worker 非常相似。
+
+-- 来自 [Java 那些事儿 - JavaOne 2011、CDI 和 Google Dart 语言](http://www.infoq.com/cn/articles/cf-javaone-2011-cdi-google-dart)
+
 入门很失败，从官方下载的 Dart Editor，运行默认的 Web 示例，报错：
 
 `java.net.ConnectException：Connection refused`
