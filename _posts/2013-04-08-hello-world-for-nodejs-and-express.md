@@ -11,9 +11,9 @@ tags: [node, javascript, brew]
 
 人生太短，如果能多给我一些时间，享受编程的乐趣，多好。
 
-### 1. Insatll Node.js
+### 1. Prepare Node.js
 
-本机一的 Node.js，我是通过 brew 安装的：
+本机的 Node.js，我是通过 brew 安装的：
 
 ```
 brew install node
