@@ -49,9 +49,9 @@ $ chmod 666 config.php
 
 1. 可以直接 get 注入日历，没有做错误处理； 
 
- `index.php?phpcid=100` 日历显示为 No title
+  `index.php?phpcid=100` 日历显示为 No title
 
- `?phpcid=100&action=cadmin` 直接报 SQL 语法错误
+  `?phpcid=100&action=cadmin` 直接报 SQL 语法错误
 
 2. 新建事件，默认从下午 5 点开始，我印象中之前的版本也有这个问题，只是现在忘记了要修改哪个文件。
 
