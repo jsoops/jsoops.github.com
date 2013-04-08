@@ -29,6 +29,18 @@ From [http://www.sublimetext.com/](http://www.sublimetext.com/)
 
 今天正式把 TextMate 从 Dock 中移除，集中精力学习使用 Sublime。
 
+## 0. Online Tutorials
+
+* [Lucifr Sublime Text 2 Tricks and Tips](http://lucifr.com/2011/08/31/sublime-text-2-tricks-and-tips/)
+
+* [Perfect Workflow in Sublime Text](http://net.tutsplus.com/articles/news/perfect-workflow-in-sublime-text-free-course/)
+
+* [Emmet Documentation](http://docs.emmet.io/)
+
+* [Emmet Cheat Sheet](http://docs.emmet.io/cheat-sheet/)
+
+持续学习中。
+
 ## 1. Package Control
 
 
@@ -460,15 +472,5 @@ Colour Schemes
   "theme": "Phoenix Dark.sublime-theme"
 }
 {% endhighlight %}
-
-----
-
-下面这个文章，很全面：
-
-[Lucifr Sublime Text 2 Tricks and Tips](http://lucifr.com/2011/08/31/sublime-text-2-tricks-and-tips/)
-
-[Perfect Workflow in Sublime Text](http://net.tutsplus.com/articles/news/perfect-workflow-in-sublime-text-free-course/)
-
-持续学习中。
 
 全文完。
