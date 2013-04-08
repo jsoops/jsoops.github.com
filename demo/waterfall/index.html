@@ -409,5 +409,19 @@ function getarraykey(s, v) {for(k in s) {if(s[k] == v) {return k;}}}
 window.onload = function() {liuxiaofan();};
 /*浏览器窗口改变时也运行函数*/
 window.onresize = function() {liuxiaofan();};
-</script></body>
+/*添加滚动判断*/
+//首先给窗口绑定事件scroll
+$(window).bind("scroll",function(){
+// 然后判断窗口的滚动条是否接近页面底部，这里的20可以自定义
+  if( $(document).scrollTop() + $(window).height() > $(document).height() - 20 ){
+    /*$.ajax({
+      //ajax代码，异步载入数据
+      //一般的会callback，将数据填入固定的选择器中
+    });*/
+    console.log("加载新的数据");
+  }
+})
+</script>
+
+</body>
 </html>

@@ -465,7 +465,9 @@ Colour Schemes
 
 下面这个文章，很全面：
 
-[Lucifr Sublime Text 2 入门及技巧](http://lucifr.com/2011/08/31/sublime-text-2-tricks-and-tips/)
+[Lucifr Sublime Text 2 Tricks and Tips](http://lucifr.com/2011/08/31/sublime-text-2-tricks-and-tips/)
+
+[Perfect Workflow in Sublime Text](http://net.tutsplus.com/articles/news/perfect-workflow-in-sublime-text-free-course/)
 
 持续学习中。
 

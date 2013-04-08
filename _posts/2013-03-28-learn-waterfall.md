@@ -47,6 +47,42 @@ tags: [waterfall]
 
 实例：[戳这里](/demo/waterfall/index.html) 图片来自百度，代码版权 [刘晓帆](http://liuxiaofan.com/?p=702) 。
 
+这个版本只实现了布局，未添加持续加载，只添加了一段模拟代码：
+
+```javascript
+/*添加滚动判断*/
+//首先给窗口绑定事件scroll
+$(window).bind("scroll",function(){
+// 然后判断窗口的滚动条是否接近页面底部，这里的20可以自定义
+  if( $(document).scrollTop() + $(window).height() > $(document).height() - 20 ){
+    /*$.ajax({
+      //ajax代码，异步载入数据
+      //一般的会callback，将数据填入固定的选择器中
+    });*/
+    console.log("加载新的数据");
+  }
+})
+```
+
+推荐两个 jQuery 无限滚动插件：
+
+- [Infinite-Scroll](https://github.com/paulirish/infinite-scroll)
+
+- [jQuery-Screw](https://github.com/jasonlau/jQuery-Screw)
+
+还有一个淘到本地的例子：[点我吧](/demo/waterfall/scrollextend/index.html)！
+
+瀑布流布局，也有优秀的插件：[jQuery Masonry](https://github.com/desandro/masonry)。
+
+最后推荐两篇[牛魔王](http://www.niumowang.org/)的文章：
+
+- [jQuery实现无限滚动瀑布流实现原理](http://www.niumowang.org/html-css/jquery-scroll-theorem/)
+
+- [HTML5 + CSS3 的瀑布流布局的实现](http://www.niumowang.org/html-css/html5-css3-waterfall/)
+
+对瀑布流的布局，研究很透彻。
+
+
 ## 语录
 
 哈佛有一个著名的理论：人的差别在于业余时间，而一个人的命运决定于晚上8点到10点之间。每晚抽出2个小时的时间用来阅读、进修、思考或参加有意的演讲、讨论，你会发现，你的人生正在发生改变，坚持数年之后，成功会向你招手。

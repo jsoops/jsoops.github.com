@@ -1,21 +1,21 @@
 ﻿<tags>
 <a href="http://dev.chenzixin.com/dashboard.action" class="tag-link-66" title="2 topics" rel="tag" style="font-size: 30pt;" color="0x333333" target="_top">Confleunce</a>
 
-<a href="http://localhost:8080/" class="tag-link-39" title="1 topics" rel="tag" style="font-size: 28pt;" target="_parent">Wiki</a>
+<a href="http://localhost:8080/" class="tag-link-39" title="1 topics" rel="tag" style="font-size: 28pt;" color="0x333333" target="_parent">Wiki</a>
 
-<a href="http://olservice.sinaapp.com" class="tag-link-54" title="2 topics" rel="tag" style="font-size: 18.55556pt;" target="_blank">SAE</a>
+<a href="http://olservice.sinaapp.com" class="tag-link-54" title="2 topics" rel="tag" style="font-size: 18.55556pt;" color="0x333333" target="_blank">SAE</a>
 
-<a href="http://www.pconline.com.cn" class="tag-link-42" hicolor="0x000099" title="1 topics" rel="tag" style="font-size: 40pt;">PConline</a>
+<a href="http://www.pconline.com.cn" class="tag-link-42" hicolor="0x000099" color="0x333333" title="1 topics" rel="tag" style="font-size: 40pt;">PConline</a>
 
-<a href="http://www.chenzixin.com" class="tag-link-25" title="1 topics" rel="tag" style="font-size: 25pt;">GitHub</a>
+<a href="http://www.chenzixin.com" class="tag-link-25" color="0x333333" title="1 topics" rel="tag" style="font-size: 25pt;">GitHub</a>
 
-<a href="http://www.jsoops.com" class="tag-link-27" title="1 topics" rel="tag" style="font-size: 20pt;">JS Oops</a>
+<a href="http://www.jsoops.com" class="tag-link-27" color="0x333333" title="1 topics" rel="tag" style="font-size: 20pt;">JS Oops</a>
 
-<a href="http://www.scalac.com" class="tag-link-29" title="1 topics" rel="tag" style="font-size: 18pt;">Scalac</a>
+<a href="http://www.scalac.com" class="tag-link-29" color="0x333333" title="1 topics" rel="tag" style="font-size: 18pt;">Scalac</a>
 
-<a href="http://www.pyivy.com" class="tag-link-43" title="1 topics" rel="tag" style="font-size: 32pt;" >Python Ivy</a>
+<a href="http://www.pyivy.com" color="0x333333" class="tag-link-43" title="1 topics" rel="tag" style="font-size: 32pt;" >Python Ivy</a>
 
-<a href="http://www.132010.com" class="tag-link-43" title="1 topics" rel="tag" style="font-size: 12pt;" hicolor="0xff1111">China Unicom</a>
+<a href="http://www.132010.com" class="tag-link-43" color="0x333333" title="1 topics" rel="tag" style="font-size: 12pt;" hicolor="0xff1111">China Unicom</a>
 
-<a href="javascript:alert('foo');" class="tag-link-19" title="10 topics" rel="tag" style="font-size: 20pt;" hicolor="0x000099">TagCloud</a>
+<a href="javascript:alert('foo');" class="tag-link-19" title="10 topics" rel="tag" style="font-size: 20pt;" hicolor="0x000099" color="0x333333">TagCloud</a>
 </tags>

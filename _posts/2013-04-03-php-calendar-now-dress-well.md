@@ -27,3 +27,33 @@ $ svn co http://php-calendar.googlecode.com/svn/ php-calendar-read-only
 ```
 
 你还有理由不学 CSS 吗？
+
+密切关注动向。
+
+#### 2013-04-04
+
+发现只是官方演示 Demo 更新了皮肤，Google Code 里的还是原来的样式，静等升级。
+
+#### 2013-04-06
+
+php-calendar 的源码托管，也迁移到了 [GitHub](https://github.com/sproctor/php-calendar)
+
+新的安装包，由 php-calendar-2.0-rc2.tar.gz 的 94K 增加到现在 php-calendar-master.zip 的 309K，应该是穿了衣服了。这衣服好重：）
+
+```
+$ cd /Library/WebServer/Documents/php/calendar
+$ touch config.php
+$ chmod 666 config.php
+```
+安装成功，还有两个问题：
+
+1. 可以直接 get 注入日历，没有做错误处理； 
+
+ `index.php?phpcid=100` 日历显示为 No title
+
+ `?phpcid=100&action=cadmin` 直接报 SQL 语法错误
+
+2. 新建事件，默认从下午 5 点开始，我印象中之前的版本也有这个问题，只是现在忘记了要修改哪个文件。
+
+
+
