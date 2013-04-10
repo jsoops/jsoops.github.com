@@ -9,7 +9,9 @@ tags: [js, images]
 
 转自：[http://www.techrepublic.com](http://www.techrepublic.com/article/preloading-and-the-javascript-image-object/5214317)
 
-[HTMLImageElement](https://developer.mozilla.org/en-US/docs/DOM/HTMLImageElement)
+Mozilla：[HTMLImageElement](https://developer.mozilla.org/en-US/docs/DOM/HTMLImageElement)
+
+W3schools：[HTML DOM Document Object](http://www.w3schools.com/jsref/dom_obj_document.asp)
 
 Image Object
 
