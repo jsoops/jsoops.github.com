@@ -11,6 +11,16 @@ tags: [js, images]
 
 [HTMLImageElement](https://developer.mozilla.org/en-US/docs/DOM/HTMLImageElement)
 
+Image Object
+
+The Image object represents an embedded image.
+
+For each `<img>` tag in an HTML document, an Image object is created.
+
+Notice that images are not technically inserted into an HTML page, images are linked to HTML pages. The `<img>` tag creates a holding space for the referenced image.
+
+----
+
 <p class='justify'>Lots of high-res images can really spruce up a Web site. But they can also slow it down—images are files, files use bandwidth, and bandwidth is directly related to wait times. It's time you get yourself an education on how to speed things up with a little trick called image preloading.</p>
 
 ### Image preloading
