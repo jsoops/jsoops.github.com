@@ -9,6 +9,8 @@ tags: [js, images]
 
 转自：[http://www.techrepublic.com](http://www.techrepublic.com/article/preloading-and-the-javascript-image-object/5214317)
 
+[HTMLImageElement](https://developer.mozilla.org/en-US/docs/DOM/HTMLImageElement)
+
 <p class='justify'>Lots of high-res images can really spruce up a Web site. But they can also slow it down—images are files, files use bandwidth, and bandwidth is directly related to wait times. It's time you get yourself an education on how to speed things up with a little trick called image preloading.</p>
 
 ### Image preloading
