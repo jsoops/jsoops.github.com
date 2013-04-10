@@ -11,9 +11,26 @@ tags: [js, images]
 
 Mozilla：[HTMLImageElement](https://developer.mozilla.org/en-US/docs/DOM/HTMLImageElement)
 
+*Example*
+
+```javascript
+var img1 = new Image(); // DOM 0
+img1.src = 'image1.png';
+img1.alt = 'alt';
+document.body.appendChild(img1);
+
+var img2 = document.createElement('img'); // use DOM HTMLImageElement
+img2.src = 'image2.jpg';
+img2.alt = 'alt text';
+document.body.appendChild(img2);
+
+// using first image in the document
+alert(document.images[0].src);
+```
+
 W3schools：[HTML DOM Document Object](http://www.w3schools.com/jsref/dom_obj_document.asp)
 
-Image Object
+*Image Object*
 
 The Image object represents an embedded image.
 
