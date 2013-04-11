@@ -40,6 +40,10 @@ function runcode(obj) {
 
 另外，OSChina 推出的 [RunJS](http://runjs.cn/code/) 也是非常优秀的产品，如果你不喜欢它默认的深色主题，可以在设置里切换。
 
+如果你经常看 w3school 的教程，对这个应用，也应该有印象，速度也还不错。
+
+[JS Try Catch](http://www.w3school.com.cn/tiy/t.asp?f=jseg_try_catch)
+
 结论：
 
 [不止一种方法去做一件事](https://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it)（There's more than one way to do it）。
