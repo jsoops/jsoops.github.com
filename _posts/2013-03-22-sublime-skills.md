@@ -31,7 +31,9 @@ From [http://www.sublimetext.com/](http://www.sublimetext.com/)
 
 ## 0. Online Tutorials
 
-* [Lucifr Sublime Text 2 Tricks and Tips](http://lucifr.com/2011/08/31/sublime-text-2-tricks-and-tips/)
+* [Sublime Text 2 入门及技巧](http://lucifr.com/2011/08/31/sublime-text-2-tricks-and-tips/)
+
+* [Sublime Text 2 不完全使用手册](http://liuxiaofan.com/?p=1081)
 
 * [Perfect Workflow in Sublime Text](http://net.tutsplus.com/articles/news/perfect-workflow-in-sublime-text-free-course/)
 
@@ -89,6 +91,8 @@ import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_p
 * [Alignment](http://wbond.net/sublime_packages/alignment)  `control + command + A` 对齐
 
 * [PlainTasks](https://github.com/aziz/PlainTasks) A Simple TODOList
+
+* [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) [How to Use](https://tutsplus.com/lesson/livereload/)
 
 
 还有各种格式化 HTML JS 的插件，没有太多的高下之后，找自己喜欢的。
