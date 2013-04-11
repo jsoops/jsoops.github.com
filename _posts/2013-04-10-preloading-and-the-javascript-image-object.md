@@ -9,6 +9,10 @@ tags: [js, images]
 
 转自：[http://www.techrepublic.com](http://www.techrepublic.com/article/preloading-and-the-javascript-image-object/5214317)
 
+序：
+
+我们在开发中，经常使用 JS Image 对象，但一直没有仔细的研究。今天找到了 Mozilla 手册：
+
 Mozilla：[HTMLImageElement](https://developer.mozilla.org/en-US/docs/DOM/HTMLImageElement)
 
 *Example*
@@ -28,6 +32,8 @@ document.body.appendChild(img2);
 alert(document.images[0].src);
 ```
 
+同时也看下 W3schools 的描述：
+
 W3schools：[HTML DOM Document Object](http://www.w3schools.com/jsref/dom_obj_document.asp)
 
 *Image Object*
@@ -37,6 +43,29 @@ The Image object represents an embedded image.
 For each `<img>` tag in an HTML document, an Image object is created.
 
 Notice that images are not technically inserted into an HTML page, images are linked to HTML pages. The `<img>` tag creates a holding space for the referenced image.
+
+除了 Image 之外，还有 Option 可以用 new 创建：
+
+```javascript
+var sel = document.createElement("select");
+//var sel = new Select();// not work
+
+var opt1 = new Option();
+var opt2 = new Option();
+ 
+opt1.value = "1";
+opt1.text = "Option: Value 1";
+ 
+opt2.value = "2";
+opt2.text = "Option: Value 2";
+ 
+sel.add(opt1, null);
+sel.add(opt2, null);
+ 
+document.body.appendChild(sel);
+```
+
+可能 DOM 设计者，秉承了最小需求原则，Image 和 Option 在实际开发中，动态生成的场合相对较多，所以才允许直接 new？
 
 ----
 
