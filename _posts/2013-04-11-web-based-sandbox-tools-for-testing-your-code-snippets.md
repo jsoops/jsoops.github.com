@@ -17,6 +17,8 @@ reveal.js 综合表现最好，为装逼宅男码农量身定制。
 
 它的惊艳效果，也赢得了普遍的赞誉。Sun2bin 问，reveal 展示的代码，能不能实时运行？
 
+----
+
 个人感觉有些难度，主要是高亮之后的代码，自然加了很多样式，而诸如[蓝色理想](http://bbs.blueidea.com/thread-3088722-1-1.html)的这种方法：
 
 ```javascript
@@ -43,6 +45,26 @@ function runcode(obj) {
 如果你经常看 w3school 的教程，对这个应用，也应该有印象，速度也还不错。
 
 [JS Try Catch](http://www.w3school.com.cn/tiy/t.asp?f=jseg_try_catch)
+
+最爱 JSbin，不过博大精深，一时半会儿，还没有弄明白，我会抽时间看看这些视频：
+
+[Video](http://www.youtube.com/playlist?list=PLXmT1r4krsTooRDWOrIu23P3SEZ3luIUq)
+
+亮点：
+
+1. 语法高亮；
+
+2. 本地运行；
+
+3. 支持控制台输出； 
+
+4. 支持第三方库，如 jQuery, YUI；
+
+5. 可在线分享；
+
+6. 持续发现中……
+
+----
 
 结论：
 
