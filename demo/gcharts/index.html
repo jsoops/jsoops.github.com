@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<!-- Le styles -->
+	<link href="http://www.chenzixin.com/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+	<link href="http://www.chenzixin.com/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+	<link href="http://www.chenzixin.com/assets/themes/twitter/css/pygments.css" rel="stylesheet" type="text/css" media="all">
+	<style type="text/css">
+		    body {
+		  position: relative;
+		  padding-top: 40px;
+		}
+
+    </style>
+	<script type="text/javascript" src="js/api.js"></script>
+	<script type="text/javascript">
+	      google.load("visualization", "1", {packages:["corechart"]});
+	      google.setOnLoadCallback(drawChart);
+	      function drawChart() {
+	        var data = google.visualization.arrayToDataTable([
+	          ['Task', 'Hours per Day'],
+	          ['Work',     11],
+	          ['Eat',      2],
+	          ['Commute',  2],
+	          ['Watch TV', 2],
+	          ['Sleep',    7]
+	        ]);
+
+	        var options = {
+	          title: 'My Daily Activities'
+	        };
+
+	        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+	        chart.draw(data, options);
+	      }
+    </script>
+
+</head>
+<body data-spy="scroll" data-target=".navbar">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="./index.html">Google Charts</a>
+			</div>
+		</div>
+	</div>
+
+	<header class="jumbotron subhead">
+		<div class="container">
+			<h1>Display live data on your site</h1>
+			<p class="lead">
+				Google chart tools are powerful, simple to use, and free. Here are Local demos to Using Chart Tools.
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="span3">
+				<ul class="nav nav-tabs nav-stacked">
+					<li>
+						<a href="all.html">All Samples</a>
+					</li>
+					<li>
+						<a href="area.html">area</a>
+					</li>
+					<li>
+						<a href="bar.html">bar</a>
+					</li>
+					<li>
+						<a href="bubble.html">bubble</a>
+					</li>
+					<li>
+						<a href="candlestick.html">candlestick</a>
+					</li>
+					<li>
+						<a href="column.html">column</a>
+					</li>
+					<li>
+						<a href="combo.html">combo</a>
+					</li>
+					<li>
+						<a href="gauge-n.html">gauge-n</a>
+					</li>
+					<li>
+						<a href="geo-n.html">geo-n</a>
+					</li>
+					<li>
+						<a href="line.html">line</a>
+					</li>
+					<li>
+						<a href="pie.html">pie</a>
+					</li>
+					<li>
+						<a href="scatter.html">scatter</a>
+					</li>
+					<li>
+						<a href="steppedarea.html">steppedarea</a>
+					</li>
+					<li>
+						<a href="table.html">table</a>
+					</li>
+					<li>
+						<a href="treemap-n.html">treemap-n</a>
+					</li>
+				</ul>
+			</div>
+			<div class="span7">
+			<span>Google Chart Tools provide a perfect way to visualize data on your website. From simple line charts to complex hierarchical tree maps, the chart galley provides a large number of well-designed chart types. Populating your data is easy using the provided client- and server-side tools.</span>
+			<span id="chart_div"></span>
+			<span>Thanks to Bingal.</span>
+			</div>
+			
+		</div>
+</body>
+	</html>
