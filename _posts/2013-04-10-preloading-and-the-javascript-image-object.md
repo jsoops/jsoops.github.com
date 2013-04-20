@@ -67,6 +67,17 @@ document.body.appendChild(sel);
 
 可能 DOM 设计者，秉承了最小需求原则，Image 和 Option 在实际开发中，动态生成的场合相对较多，所以才允许直接 new？
 
+补记：据我不完全统计，只有 Image 和 Option 支持 new 操作符，可在 Chorome 控制台测试。
+
+```
+new Image
+<img>​
+new Option
+<option>​​</option>​
+new Button
+ReferenceError: Button is not defined
+```
+
 ----
 
 <p class='justify'>Lots of high-res images can really spruce up a Web site. But they can also slow it down—images are files, files use bandwidth, and bandwidth is directly related to wait times. It's time you get yourself an education on how to speed things up with a little trick called image preloading.</p>
