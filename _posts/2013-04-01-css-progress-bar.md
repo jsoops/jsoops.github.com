@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Simpe CSS Progress Bar"
+title: "简单的 CSS 进度条"
 description: "<p>本来是说 CSS 进度条的，贪婪的本性又我把带到沟里去了，讲了很多 Groovy 和 Scala 的故事。</p><p>点击<a href='/demo/progressbar/index.html'>这里</a>看效果，代码也贴出来了。</p><p><a href='https://code.google.com/p/google-code-prettify/'>Google Code Prettify</a> 作为轻量级的代码着色工具，真的很不错！</p><p>重要：如果我早知道 BootStrap 自带了 Progress Bar，我也不会写这几行代码。</p>"
 category: css
 tags: [css, progress, google]

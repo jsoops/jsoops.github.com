@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Use Google Charts Locally"
+title: "离线使用 Google Charts"
 description: "<p>可能是因为我们过于喜爱 Gogole，一直固执的以为，<a href='https://developers.google.com/chart/interactive/docs/index'>Google Charts</a> 是这个世界上最好的图表工具，没有之一：</p><ul><li>使用方便</li><li>配色美观</li></ul><p>但有一个致命的缺陷，提供免费服务，但不开源，也不允许离线使用，这让身在墙内的我们，痛苦不堪。</p>"
 category: javascript
 tags: [charts]

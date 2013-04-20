@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A 3D Tag Cloud for Web"
+title: "3D 标签云的 Flash 实现"
 description: "<p>在我的印象中，Tag 是 <a href='http://zh.wikipedia.org/wiki/Web2.0'>Web2.0</a> 时代开始流行的一个概念，但是今天查了维基百科，他们似乎没有必须联系。Tag Cloud 从视觉上给人以冲击感，应该算是 Tag 应用的华丽转身。</p><p>最近看到 Tag Cloud 效果，也是从 <a href='http://agiledon.github.com/'>TW 张逸</a> 的博客，真的很感谢他，通过他我知道了这个世界上还有 Jekyll 这么好的博客引擎。</p><p>但 Jekyll 默认的 Tag 页面，其实是谈不上美观的。</p><blockquote class='warning'>On product, they said, “If we present them in a slipshod manner, they will be perceived as slipshod”.</blockquote><p>--<a href='http://engineering.gomiso.com/2012/02/01/youre-overthinking-it/'>You’re Overthinking It</a></p><p><a href='http://www.aqee.net/youre-overthinking-it/'>外刊 IT 评论</a>：对于一个产品，『如果我们以不加修饰的外表把它呈现出来，人们就会理解为它粗制滥造』。</p><p>张逸把一个原本为 WordPress 定制的插件移植到 Jekyll（已经升级至 <a href='http://octopress.org/'>Octopress</a>），他是怎么做到的？</p>"
 category: flash
 tags: [js, flash, tag]

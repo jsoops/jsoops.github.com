@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Enhance Jekyll Pagination"
+title: "增强 Jekyll 分页"
 description: "<p>增强 Jekyll 的分页功能。</p><p>Coming Soon!</p>"
 category: javascript
 tags: [jekyll, pagination]
@@ -172,5 +172,4 @@ tags: [jekyll, pagination]
 	},
 
 ```
-
-Coming Soon!
+以上代码来自我们的活动框架，4what 编写，但是目测移植到 Jekyll，似乎是不可能完成的任务，先搁置。

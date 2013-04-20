@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hello World for Node.js and Express"
+title: "Node.js 和 Express 入门" 
 description: "<p>从 Hexo 静态博客引擎，到网易的开源游戏框架 pomelo，再加上放假期间对 C Node Go Python Ruby 运算速度测试，重新提起了我对 Node.js 的兴趣。</p><p>人生太短，如果能多给我一些时间，享受编程的乐趣，多好。</p>"
 category: node
 tags: [node, javascript, brew]

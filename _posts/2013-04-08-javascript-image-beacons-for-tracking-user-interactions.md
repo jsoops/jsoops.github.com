@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Javascript Image Beacons For Tracking User Interactions"
+title: "使用 Image Beacons 优化用户体验"
 description: "<p>发现有些 Web 程序中会在页面中放置一个隐藏的 img，然后把它的 src 设置为调用后台业务逻辑的 url。这样做有什么好处？和加载页面后通过 Javascript 发起一个 ajax 请求有什么区别吗？</p><p>英文术语叫：image beacon。</p>"
 category: javascript
 tags: [javascript]

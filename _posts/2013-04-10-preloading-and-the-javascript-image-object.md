@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Preloading and the JavaScript Image Object"
+title: "JavaScript Image Object 实现预加载"
 description: "<p class='justify'>Lots of high-res images can really spruce up a Web site. But they can also slow it down—images are files, files use bandwidth, and bandwidth is directly related to wait times. It's time you get yourself an education on how to speed things up with a little trick called image preloading.</p>"
 category: javascript
 tags: [js, images]

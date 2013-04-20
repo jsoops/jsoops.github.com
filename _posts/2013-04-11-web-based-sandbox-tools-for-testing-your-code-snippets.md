@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Web based Sandbox Tools for Testing Your Code Snippets"
+title: "基于 Web 的代码测试沙盒"
 description: "<p>昨天的广告月会上，我放弃了一直不太擅长的 MS PowerPoint，改用 <a href='https://github.com/hakimel/reveal.js/'>reveal.js</a>，a HTML Presentation Framework，在此之前，我曾找过三款同类框架：</p><ul><li>Impress</li><li>deck.js</li><li>Bespoke.js</li></ul><p>reveal.js 综合表现最好，为装逼宅男码农量身定制。</p><p>它的惊艳效果，也赢得了普遍的赞誉。Sun2bin 问，reveal 展示的代码，能不能实时运行？</p>"
 category: javascript
 tags: [js, ppt]

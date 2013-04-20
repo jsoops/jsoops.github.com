@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Write Presentation without Powerpoint or Keynote"
+title: "借助 HTML5 框架用纯文本写 PPT"
 description: "<p>我一直在追寻好用的 HTML5 Presentation Tools，从最初的 Impress.js 开始，一共尝试了以下框架：</p><ul><li>Impress.js</li><li>deck.js</li><li>Bespoke.js</li><li>reveal.js</li><li>mdpress</li><li>HTML5slides</li></ul><p>总体说来，他们都是优秀的 PPT 工具，我悉数收藏在自己的 Wiki 之中。</p>"
 category: html
 tags: [html5, js, ppt, markdown]
