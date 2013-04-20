@@ -49,6 +49,14 @@ tags: [html5, js, ppt, markdown]
 
 我也是最近，才知道这句话：不努力，就会变成 IE 浏览器。
 
+补充：由于过分崇拜乔帮主，我把 mdpress 和 reveal 的主题，改成了 Keynote 风格：
 
-
+```css
+body {
+	background: linear-gradient(top,  #000 0%,#636172 100%); 
+	background: -moz-linear-gradient(top, #000 0%, #636172 100%);
+	background: -webkit-linear-gradient(top,  #000 0%,#636172 100%);
+	background: -ms-linear-gradient(top, rgb(0, 0, 0), rgb(99, 97, 116));
+	background: -o-linear-gradient(top, rgb(0, 0, 0), rgb(99, 97, 116));
+}
 
