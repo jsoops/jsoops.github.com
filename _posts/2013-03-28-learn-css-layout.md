@@ -206,7 +206,7 @@ tags: [css, layout]
 ```
 ### 4. 继续学习最简单的 Layout
 
-昨天管理了下 [Learn Perl in about 2 hours 30 minutes](http://www.chenzixin.com/porgram/2013/03/28/learn-perl-in-about-2-hours-30-minutes/)，最初是想全文转为 MarkDown，后来发现工作量太大了，而且为了显示美观，必须加两端对齐，还是有HTML片段。
+昨天整理了下 [Learn Perl in about 2 hours 30 minutes](http://www.chenzixin.com/porgram/2013/03/28/learn-perl-in-about-2-hours-30-minutes/)，最初是想全文转为 MarkDown，后来发现工作量太大了，而且为了显示美观，必须加两端对齐，还是有HTML片段。
 
 于是放弃，只给原页面加了 BootStrap 的样式，限制了 body 的宽度为 960px, 并居中对齐。
 
