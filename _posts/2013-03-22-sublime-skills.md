@@ -81,16 +81,15 @@ import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_p
 
 * [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8) GBK支持
 
-
 * [Emmet](https://github.com/emmetio/emmet) [DOC](https://github.com/emmetio/emmet-docs) ZenCoding
 
-
-* [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements) 侧边栏
-
+* [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements) 侧边栏增强
 
 * [Alignment](http://wbond.net/sublime_packages/alignment)  `control + command + A` 对齐
 
-* [PlainTasks](https://github.com/aziz/PlainTasks) A Simple TODOList
+* [SublimeCSSTidy](https://github.com/fitnr/SublimeCSSTidy) 格式化 CSS
+
+* [JSFormat](https://github.com/jdc0589/JsFormat) 格式化 JavaScript
 
 * [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) [How to Use](https://tutsplus.com/lesson/livereload/)
 
