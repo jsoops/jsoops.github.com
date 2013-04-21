@@ -2,7 +2,7 @@
 layout: post
 title: "Sublime Text 2 使用笔记"
 description: "<p>Sublime Text 2 是一个轻量、简洁、高效、跨平台的编辑器，方便的配色以及兼容 vim 快捷键等各种优点博得了很多前端开发人员的喜爱。Sublime Text 2 是共享软件，免费版和收费版基本无区别，只是偶尔会弹框让你去购买，这个基本不影响使用。</p><p>网友<a href='http://gchen.cn/2011/12/ten-amazing-features-of-sublime-text-2/' target='_blank'>Mike</a> 总结的 Sublime 十大优势</p><ul><li>Command Palette (cmd+shift+p)</li><li>Go to Anything (cmd+p)</li><li>Package Control</li><li>Modern UI</li><li>Distraction Free Mode (cmd+ctrl+shift＋f)</li><li>VI Mode</li><li>Mini Map</li><li>Multi-panel Editing (cmd+alt+1-4)</li><li>Auto Save</li><li>Multiple Selection</li><li>All Others Normal Editors Have</li></ul>"
-category: sublime
+category: program
 tags: [sublime, js]
 ---
 {% include JB/setup %}

@@ -2,7 +2,7 @@
 layout: post
 title: "发现 Dribbble 寻找杰出设计"
 description: "<p>为了换一个好看的 Sublime Text 2 图标，发现了这个网站：</p><p><a href='http://dribbble.com/' target='_blank'>http://dribbble.com/</a></p><p>太多惊艳的作品，每一个发布作品的设计师，都是那么可爱：</p><p>专业，谦逊，幽默。</p>"
-category: design
+category: program
 tags: [design, icons, theme]
 ---
 {% include JB/setup %}

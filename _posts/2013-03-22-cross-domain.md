@@ -2,7 +2,7 @@
 layout: post
 title: "前端跨域总结分享"
 description: "<p>JavaScript 出于安全方面的考虑，不允许跨域调用其他页面的对象。但在安全限制的同时也给注入 iframe 或是 ajax 应用上带来了不少麻烦。</p><p><strong>什么情况下会跨域</strong></p><p>1、主域不同</p><p>2、主域相同 子域不同</p><p>3、协议不同</p><p>4、端口号不同</p><p>注：域名和域名对应 IP 之间，也在跨域之列。</p>"
-category: javascrit
+category: javascript
 tags: [domain, js]
 ---
 {% include JB/setup %}

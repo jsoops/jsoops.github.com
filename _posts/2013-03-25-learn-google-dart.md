@@ -2,7 +2,7 @@
 layout: post
 title: "Learning Google Dart"
 description: "<p>Dart brings structure to web app engineering with a new language, libraries, and tools.</p><p><a href='http://www.dartlang.org/' target='_blank'>http://www.dartlang.org/</a></p><p><a href='http://www.dartlang.org/docs/' target='_blank'>http://www.dartlang.org/docs/</a></p><p>Dart is a class-based, object-oriented language with lexical scoping, closures, and optional static typing. Dart helps you build structured modern web apps and is easy to learn for a wide range of developers.</p>"
-category: dart
+category: javascript
 tags: [dart, intellij]
 ---
 {% include JB/setup %}

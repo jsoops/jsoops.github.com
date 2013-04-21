@@ -2,7 +2,7 @@
 layout: post
 title: "初试 hexo 强中更有强中手"
 description: "<p>从 GitHub Pages 到 Jekyll，Octopres，再到 hexo，真可谓江山代有人才出，一代新人胜旧人。</p><p>感谢 GitHub！</p><p>演进的过程，是一个不断增强的过程，使用 hexo，不用修改太多配置，生成的网站，已经非常专业，站在 Node 的肩上，生成页面的速度太快了，看来 Ruby 还是有硬伤。</p><p>不过因为对 BootStrap 的感情很深，再加上这个周末的努力，Jekyll 博客已经像个样子了，暂不想深入折腾。</p><p>至于生成速度，可以忍，毕竟上传之后的速度，并不受制。</p>"
-category: nodejs
+category: node
 tags: [blog, nodejs]
 ---
 {% include JB/setup %}

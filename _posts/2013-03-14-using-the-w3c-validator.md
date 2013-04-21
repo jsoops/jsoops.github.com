@@ -2,7 +2,7 @@
 layout: post
 title: "W3C validator 验证 HTML5"
 description: "<p>昨天参照官方文档将第一个像样儿的 Django 程序 host 到 SAE 上了：</p><p><a href='http://olservice.sinaapp.com/' target='_blank'>http://olservice.sinaapp.com/</a></p><p>模版中用到了 Twitter Bootstrap ，但没有系统的学习，只是简单的从例子中拷贝了几段代码，担心不够规范，遂在页脚加了一个 HTML5 的验证，很幸运，一次性通过，只有一个警告：</p><p>This document was successfully checked as HTML5!</p><p><strong>Result: Passed, 1 warning(s)</strong></p>"
-category: html5
+category: html
 tags: [w3c, html5]
 ---
 {% include JB/setup %}
