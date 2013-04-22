@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Radial Gradient</title>
+	<style type="text/css">
+		ul {
+			overflow: hidden;
+			margin-top: 20px;
+		}
+		li{
+			list-style-type: none;
+			width: 150px;
+			height: 80px;
+			margin-bottom: 10px;
+			float: left;
+			margin-right: 5px;
+			background: #ace;
+			/*Controls the size*/
+			-webkit-background-size: 20px 20px;
+			-moz-background-size: 20px 20px;
+			background-size: 20px 20px; 
+		}
+		.radial1
+		{
+		    background:-moz-radial-gradient(#ACE,#f96,#1E90FF);
+		    background:-webkit-radial-gradient(#ACE,#f96,#1E90FF)
+		}
+		 
+		.radial2
+		{
+		    background:-moz-radial-gradient(#ACE 5%,#f96 25%,#1E90FF 50%);
+		    background:-webkit-radial-gradient(#ACE 5%,#f96 25%,#1E90FF 50%)
+		}
+		 
+		.radial3
+		{
+		    background:-moz-radial-gradient(bottom left,circle,#ACE,#f96,#1E90FF);
+		    background:-webkit-radial-gradient(bottom left,circle,#ACE,#f96,#1E90FF)
+		}
+		 
+		.radial4
+		{
+		    background:-moz-radial-gradient(bottom left,ellipse,#ace,#f96,#1E90FF);
+		    background:-webkit-radial-gradient(bottom left,ellipse,#ace,#f96,#1E90FF)
+		}
+		 
+		.radial5
+		{
+		    background:-moz-radial-gradient(ellipse closest-side,#ace,#f96 10%,#1E90FF 50%,#f96);
+		    background:-webkit-radial-gradient(ellipse closest-side,#ace,#f96 10%,#1E90FF 50%,#f96)
+		}
+		 
+		.radial6
+		{
+		    background:-moz-radial-gradient(ellipse farthest-corner,#ace,#f96 10%,#1E90FF 50%,#f96);
+		    background:-webkit-radial-gradient(ellipse farthest-corner,#ace,#f96 10%,#1E90FF 50%,#f96)
+		}
+		 
+		.radial7
+		{
+		    background:-moz-radial-gradient(circle closest-side,#ace,#f96 10%,#1E90FF 50%,#f96);
+		    background:-webkit-radial-gradient(circle closest-side,#ace,#f96 10%,#1E90FF 50%,#f96)
+		}
+		 
+		.radial8
+		{
+		    background:-moz-radial-gradient(circle farthest-side,#ace,#f96 10%,#1E90FF 50%,#f96);
+		    background:-webkit-radial-gradient(circle farthest-side,#ace,#f96 10%,#1E90FF 50%,#f96)
+		}
+		 
+		.radial9
+		{
+		    background:-moz-radial-gradient(#ace,#f96,#1E90FF);
+		    background:-webkit-radial-gradient(#ace,#f96,#1E90FF)
+		}
+		 
+		.radial10
+		{
+		    background:-moz-radial-gradient(contain,#ace,#f96,#1E90FF);
+		    background:-webkit-radial-gradient(contain,#ace,#f96,#1E90FF)
+		}
+		 
+		.radial11
+		{
+		    background:-moz-radial-gradient(80% 20%,closest-corner,#ace,#f96);
+		    background:-webkit-gradient(radial,80% 20%,0,80% 40%,100,from(#ace),to(#f96));
+		    background:-webkit-radial-gradient(80% 20%,closest-corner,#ace,#f96)
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="radial1"></li>
+		<li class="radial2"></li>
+		<li class="radial3"></li>
+		<li class="radial4"></li>
+		<li class="radial5"></li>
+		<li class="radial6"></li>
+		<li class="radial7"></li>
+		<li class="radial8"></li>
+		<li class="radial9"></li>
+		<li class="radial10"></li>
+		<li class="radial11"></li>
+	</ul>
+</body>
+</html>

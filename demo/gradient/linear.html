@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
 	<title>Linear Gradient</title>
 	<style type="text/css"> 
-		.vertical 
-		{ 
+
+		div{
 			width: 200px; 
 			height: 80px; 
 			text-align: center; 
@@ -14,6 +13,10 @@
 			margin-bottom: 10px; 
 			color: White; 
 			font-size: 20px; 
+
+		}
+		.vertical 
+		{ 
 			filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FF0000',endColorStr='#F9F900',gradientType='0'); 
 			background: -moz-linear-gradient(top, #FF0000, #F9F900); 
 			background: -o-linear-gradient(top,#FF0000, #F9F900); 
@@ -21,22 +24,53 @@
 		} 
 		.horizontal 
 		{ 
-			width: 200px; 
-			height: 80px; 
-			text-align: center; 
-			line-height: 80px; 
-			margin-bottom: 10px; 
-			color: White; 
-			font-size: 20px; 
 			filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FF0000',endColorStr='#F9F900',gradientType='1'); 
 			background: -moz-linear-gradient(left, #FF0000, #F9F900); 
 			background: -o-linear-gradient(left,#FF0000, #F9F900); 
 			background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#FF0000), to(#F9F900)); 
 		} 
+
+		.evenstops{
+			/* Firefox 3.6+ */
+			background: -moz-linear-gradient(left, #ace, #f96, #ace, #f96, #ace); 
+			/* Safari 4-5, Chrome 1-9 */
+			background: -webkit-gradient(linear, left top, right top, from(#ace), color-stop(0.25, #f96), color-stop(0.5, #ace), color-stop(0.75, #f96), to(#ace)); 
+			/* Safari 5.1+, Chrome 10+ */
+			background: -webkit-linear-gradient(left, #ace, #f96, #ace, #f96, #ace); 
+			/* Opera 11.10+ */
+			background: -o-linear-gradient(left, #ace, #f96, #ace, #f96, #ace);
+		}
+
+		.colorstops{
+			/*webkit 不支持？*/
+			background: white; /* fallback for older/unsupporting browsers */
+			background: -moz-linear-gradient(top, #dedede, white 8%, red 20%);
+			background: -webkit-gradient(linear, 0 0, 0 100%, from(#dedede), color-stop(8%, white), color-stop(20%, red);
+		}
+
+		.gradient{
+			background: linear-gradient(bottom, rgb(196,63,59) 7%, rgb(236,95,89) 54%);
+			background: -o-linear-gradient(bottom, rgb(196,63,59) 7%, rgb(236,95,89) 54%);
+			background: -moz-linear-gradient(bottom, rgb(196,63,59) 7%, rgb(236,95,89) 54%);
+			background: -webkit-linear-gradient(bottom, rgb(196,63,59) 7%, rgb(236,95,89) 54%);
+			background: -ms-linear-gradient(bottom, rgb(196,63,59) 7%, rgb(236,95,89) 54%);
+
+			background: -webkit-gradient(
+				linear,
+				left bottom,
+				left top,
+				color-stop(0.07, rgb(196,63,59)),
+				color-stop(0.54, rgb(236,95,89))
+			);
+		}
 </style>
 </head>
 <body>
-	<div class="vertical">垂直渐变</div>
-	<div class="horizontal">水平渐变</div>
+	<div class="vertical">vertical</div>
+	<div class="horizontal">horizontal</div>
+	<div class="evenstops">evenstops</div>
+	<div class="colorstops">colorstops</div>
+	<div class="gradient">gradient</div>
+
 </body>
 </html>
