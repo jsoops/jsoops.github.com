@@ -33,13 +33,13 @@ CSS3 Gradient 分为：
 
 ### 线性渐变
 
-- 原文：<http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-understanding-css3-gradients/>
+- 原文：[net.tutsplus.com](http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-understanding-css3-gradients/)
 
-- 视频：<http://www.youtube.com/watch?v=9D2hyM5SSCE>
+- 视频：[www.youtube.com](http://www.youtube.com/watch?v=9D2hyM5SSCE)
 
-- 编译：<http://www.qianduan.net/understand-the-css3-gradient.html>
+- 编译：[www.qianduan.net](http://www.qianduan.net/understand-the-css3-gradient.html)
 
-- 测试：<http://gradients.glrzad.com/>
+- 测试：[gradients.glrzad.com](http://gradients.glrzad.com/)
 
 #### Webkit
 
@@ -123,42 +123,7 @@ background: -o-linear-gradient(left, #ace, #f96, #ace, #f96, #ace);
   background: -webkit-linear-gradient(45deg, #ace, #f96);
   background: -o-linear-gradient(45deg, #ace, #f96);
 }
-.deg90 {
-  background: -moz-linear-gradient(90deg, #ace, #f96);
-  background: -webkit-gradient(linear,50% 100%,50% 0%,from(#ace),to(#f96));
-  background: -webkit-linear-gradient(90deg, #ace, #f96);
-  background: -o-linear-gradient(90deg, #ace, #f96);
-}
-.deg135 {
-  background: -moz-linear-gradient(135deg, #ace, #f96);
-  background: -webkit-gradient(linear,100% 100%,0 0,from(#ace),to(#f96));
-  background: -webkit-linear-gradient(135deg, #ace, #f96);
-  background: -o-linear-gradient(135deg, #ace, #f96);
-}
-.deg180 {
-  background: -moz-linear-gradient(180deg, #ace, #f96);
-  background: -webkit-gradient(linear,100% 50%,0 50%,from(#ace),to(#f96));
-  background: -webkit-linear-gradient(180deg, #ace, #f96);
-  background: -o-linear-gradient(180deg, #ace, #f96);
-}
-.deg225 {
-  background: -moz-linear-gradient(225deg, #ace, #f96);
-  background: -webkit-gradient(linear,100% 0%,0 100%,from(#ace),to(#f96));
-  background: -webkit-linear-gradient(225deg, #ace, #f96);
-  background: -o-linear-gradient(225deg, #ace, #f96);
-}
-.deg270 {
-  background: -moz-linear-gradient(270deg, #ace, #f96);
-  background: -webkit-gradient(linear,50% 0%,50% 100%,from(#ace),to(#f96));
-  background: -webkit-linear-gradient(270deg, #ace, #f96);
-  background: -o-linear-gradient(270deg, #ace, #f96);
-}
-.deg315 {
-  background: -moz-linear-gradient(315deg, #ace, #f96);
-  background: -webkit-gradient(linear,0% 0%,100% 100%,from(#ace),to(#f96));
-  background: -webkit-linear-gradient(315deg, #ace, #f96);
-  background: -o-linear-gradient(315deg, #ace, #f96);
-}
+
 .deg360 {
   background: -moz-linear-gradient(360deg, #ace, #f96);
   background: -webkit-gradient(linear,0 50%,100% 50%,from(#ace),to(#f96));
@@ -192,60 +157,12 @@ background: -o-linear-gradient(left, #ace, #f96, #ace, #f96, #ace);
     background:-webkit-radial-gradient(#ACE 5%,#f96 25%,#1E90FF 50%)
 }
  
-.radial3
-{
-    background:-moz-radial-gradient(bottom left,circle,#ACE,#f96,#1E90FF);
-    background:-webkit-radial-gradient(bottom left,circle,#ACE,#f96,#1E90FF)
-}
- 
-.radial4
-{
-    background:-moz-radial-gradient(bottom left,ellipse,#ace,#f96,#1E90FF);
-    background:-webkit-radial-gradient(bottom left,ellipse,#ace,#f96,#1E90FF)
-}
- 
-.radial5
-{
-    background:-moz-radial-gradient(ellipse closest-side,#ace,#f96 10%,#1E90FF 50%,#f96);
-    background:-webkit-radial-gradient(ellipse closest-side,#ace,#f96 10%,#1E90FF 50%,#f96)
-}
- 
-.radial6
-{
-    background:-moz-radial-gradient(ellipse farthest-corner,#ace,#f96 10%,#1E90FF 50%,#f96);
-    background:-webkit-radial-gradient(ellipse farthest-corner,#ace,#f96 10%,#1E90FF 50%,#f96)
-}
- 
-.radial7
-{
-    background:-moz-radial-gradient(circle closest-side,#ace,#f96 10%,#1E90FF 50%,#f96);
-    background:-webkit-radial-gradient(circle closest-side,#ace,#f96 10%,#1E90FF 50%,#f96)
-}
- 
-.radial8
-{
-    background:-moz-radial-gradient(circle farthest-side,#ace,#f96 10%,#1E90FF 50%,#f96);
-    background:-webkit-radial-gradient(circle farthest-side,#ace,#f96 10%,#1E90FF 50%,#f96)
-}
- 
 .radial9
 {
     background:-moz-radial-gradient(#ace,#f96,#1E90FF);
     background:-webkit-radial-gradient(#ace,#f96,#1E90FF)
 }
  
-.radial10
-{
-    background:-moz-radial-gradient(contain,#ace,#f96,#1E90FF);
-    background:-webkit-radial-gradient(contain,#ace,#f96,#1E90FF)
-}
- 
-.radial11
-{
-    background:-moz-radial-gradient(80% 20%,closest-corner,#ace,#f96);
-    background:-webkit-gradient(radial,80% 20%,0,80% 40%,100,from(#ace),to(#f96));
-    background:-webkit-radial-gradient(80% 20%,closest-corner,#ace,#f96)
-}
 ```
 
 #### 测试
@@ -275,10 +192,7 @@ li{
 <ul>
     <li class="radial1"></li>
     <li class="radial2"></li>
-    <li class="radial3"></li>
-    <li class="radial4"></li>
-    <li class="radial5"></li>
-    <li class="radial6"></li>
+    <li class="radial9"></li>
 </ul>
 ```
 
