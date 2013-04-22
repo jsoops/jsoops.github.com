@@ -35,7 +35,7 @@ document.write('<script type="text/javascript" src="http://www1.pconline.com.cn/
 当然，还可以有很多变通：
 
 ```javascript
-document.write('<sc'+'ript type="text/javascript" src="{{STATIC_URL}}js/jquery-1.9.0.js"></scri'+'pt>');
+document.write('<sc'+'ript type="text/javascript" src="http://www1.pconline.com.cn/api/libs/jquery/jquery-1.3.2.min.js"></scri'+'pt>');
 
 document.write('<script type="text/javascript" src="http://www1.pconline.com.cn/api/libs/jquery/jquery-1.3.2.min.js"><\/script>');
 ```
