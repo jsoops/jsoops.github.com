@@ -42,6 +42,19 @@ document.write('<script type="text/javascript" src="http://www1.pconline.com.cn/
 
 都是这了解决 `</script>` 给 HTML 造成的困惑。
 
+还有[网友](http://ntt.cc/2008/02/10/4-ways-to-dynamically-load-external-javascriptwith-source.html)总结了这种方式：
+
+```html
+<script src='' id="s1"></script>
+<script>
+	s1.src="http://www1.pconline.com.cn/api/libs/jquery/jquery-1.3.2.min.js"
+</script>
+```
+
+<blockquote class="warning">
+Chrome 下实际测试，DOM 写入成功，src 也成功改变，但是不发起网络请求，故也是错的。
+</blockquote>
+
 更好的方案，常见于 Google Analytics 监测：
 
 ```javascript
@@ -60,7 +73,6 @@ document.write('<script type="text/javascript" src="http://www1.pconline.com.cn/
 测试例子中，用到了延时，这里顺便总结一下。
 
 ```html
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -76,9 +88,9 @@ document.write('<script type="text/javascript" src="http://www1.pconline.com.cn/
  
     <script type="text/javascript">
         var echoTime = function () {
-            var d = new Date();
-            var t = d.toLocaleTimeString();
-            document.getElementById("time").innerHTML = t;
+	        var d = new Date();
+	        var t = d.toLocaleTimeString();
+	        document.getElementById("time").innerHTML = t;
         }
  
         var myInterval = setInterval(echoTime, 1000);
@@ -90,7 +102,7 @@ document.write('<script type="text/javascript" src="http://www1.pconline.com.cn/
         var myTimeout = setTimeout(function(){alert("3 senconds later.")},3000);
  
         function stopTimeout() {
-                clearTimeout(myTimeout);
+            clearTimeout(myTimeout);
         }
     </script>
 </body>
