@@ -1,40 +1,42 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en">
 <head>
-	<title>线性渐变（linear-gradient）---http://www.jb51.net</title>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<title>Linear Gradient</title>
 	<style type="text/css"> 
-.test1 
-{ 
-	width: 200px; 
-	height: 80px; 
-	text-align: center; 
-	line-height: 80px; 
-	margin-bottom: 10px; 
-	color: White; 
-	font-size: 20px; 
-	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FF0000',endColorStr='#F9F900',gradientType='0'); 
-	background: -moz-linear-gradient(top, #FF0000, #F9F900); 
-	background: -o-linear-gradient(top,#FF0000, #F9F900); 
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FF0000), to(#F9F900)); 
-} 
-.test2 
-{ 
-	width: 200px; 
-	height: 80px; 
-	text-align: center; 
-	line-height: 80px; 
-	margin-bottom: 10px; 
-	color: White; 
-	font-size: 20px; 
-	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FF0000',endColorStr='#F9F900',gradientType='1'); 
-	background: -moz-linear-gradient(left, #FF0000, #F9F900); 
-	background: -o-linear-gradient(left,#FF0000, #F9F900); 
-	background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#FF0000), to(#F9F900)); 
-} 
+		.vertical 
+		{ 
+			width: 200px; 
+			height: 80px; 
+			text-align: center; 
+			line-height: 80px; 
+			margin-bottom: 10px; 
+			color: White; 
+			font-size: 20px; 
+			filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FF0000',endColorStr='#F9F900',gradientType='0'); 
+			background: -moz-linear-gradient(top, #FF0000, #F9F900); 
+			background: -o-linear-gradient(top,#FF0000, #F9F900); 
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FF0000), to(#F9F900)); 
+		} 
+		.horizontal 
+		{ 
+			width: 200px; 
+			height: 80px; 
+			text-align: center; 
+			line-height: 80px; 
+			margin-bottom: 10px; 
+			color: White; 
+			font-size: 20px; 
+			filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FF0000',endColorStr='#F9F900',gradientType='1'); 
+			background: -moz-linear-gradient(left, #FF0000, #F9F900); 
+			background: -o-linear-gradient(left,#FF0000, #F9F900); 
+			background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#FF0000), to(#F9F900)); 
+		} 
 </style>
 </head>
 <body>
-	<div class="test1">垂直渐变</div>
-	<div class="test2">水平渐变</div>
+	<div class="vertical">垂直渐变</div>
+	<div class="horizontal">水平渐变</div>
 </body>
 </html>
