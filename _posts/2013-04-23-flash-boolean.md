@@ -127,14 +127,11 @@ var isControl:Boolean = true;
 Mouse.cursor = MouseCursor.BUTTON;
 
 function moveBox(evt:Event):void{
-	
 	var myTween:Tween = new Tween(my_box, "x", Strong.easeOut, 40, 300, 5, true);
 }
 
 var myTimer:Timer = new Timer(1500);
-
 myTimer.addEventListener(TimerEvent.TIMER, moveBox);
-
 myTimer.start(); 
 
 try
