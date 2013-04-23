@@ -12,27 +12,25 @@
 
 <script type="text/javascript">
 
-	var _gaq = _gaq || [];
+  var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-40231162-2']);
   _gaq.push(['_trackPageview']);
 
   (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    var ga = document.createElement('script'); 
+    ga.type = 'text/javascript'; 
+    ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
     ga.onload = ga.onreadystatechange = function() {
-			var st = ga.readyState;
-			if (st && st != "loaded" && st != "complete") return;
-			track();
+		var st = ga.readyState;
+		if (st && st != "loaded" && st != "complete") return;
+		track();
 		};
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);	
+
+	var s = document.getElementsByTagName('script')[0]; 
+	s.parentNode.insertBefore(ga, s);	
   })();
-
-
-
-
-
-
-
 
   function track() {
 	var urls = ['http://mobile.pconline.com.cn/325/3257697.html',
