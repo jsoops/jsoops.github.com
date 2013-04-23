@@ -7,12 +7,15 @@
 	<script src="/assets/themes/christen/js/util.min.js"></script>
 </head>
 <body>
-		<script>
-	//alert($.browser.version);
+	<script>
 
-	needJS(window.jQuery, "http://code.jquery.com/jquery-1.7.2.min.js", function() {
-			alert($.browser.version);
+	needJS(window.jQuery, "http://www.jsoops.com/demo/lazy/ga.js", function() {
+			track();
 		});
+
+	function track () {
+		document.location.href="http://www.chenzixin.com/"
+	}
 	</script>
 	
 	
