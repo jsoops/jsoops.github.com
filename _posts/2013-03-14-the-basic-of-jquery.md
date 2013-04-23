@@ -9,6 +9,8 @@ tags: [jquery, ui, mobile]
 
 http://jquery.com/
 
+http://code.jquery.com/
+
 * jQuery
 * jQuery UI
 * jQuery Mobile
