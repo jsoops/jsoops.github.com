@@ -9,15 +9,23 @@
 <body>
 	<script>
 
-	needJS(false, "http://www.jsoops.com/demo/lazy/ga.js", function() {
-			track();
-		});
+	  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40231162-1']);
+  _gaq.push(['_trackPageview']);
 
-	function track () {
-		document.location.href="http://www.jsoops.com/demo/lazy/index.html"
-	}
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.onload = ga.onreadystatechange = function() {
+			var st = ga.readyState;
+			if (st && st != "loaded" && st != "complete") return;
+			document.location.href="http://www.jsoops.com/demo/lazy/index.html"
+		};
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);	
+  })();
+
+
 	</script>
-	
-	
+
 </body>
 </html>
