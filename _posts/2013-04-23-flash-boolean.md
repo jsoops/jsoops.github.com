@@ -99,7 +99,7 @@ function clickHandler(evt:MouseEvent):void
 
 <br/>
 
->在基于定时器的动画里，这个Bug不会触发。
+>在基于定时器的动画里，这个Bug不会触发
 
 测试：[这里](/demo/impbug/test-3.html)
 
