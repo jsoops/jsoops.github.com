@@ -92,7 +92,7 @@ function dynamic(obj, src, callback) {
 
 function getVersion() {
 	alert(1);
-	dynamic(window.$, "http://www.jsoops.com/assets/themes/christen/js/jquery-1.8.3.min.js", function() {
+	dynamic(false, "http://www.jsoops.com/assets/themes/christen/js/jquery-1.8.3.min.js", function() {
 		alert(3);
 		alert("version: " + $.browser.version);
 	});
