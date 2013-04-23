@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lazy Load</title>
+	<script src="/assets/themes/christen/js/util.min.js"></script>
+</head>
+<body>
+
+<h3>needJS Demo</h3>
+
+<hr>
+
+<div style="margin:50px 5px 15px 20px;">
+
+
+<button id="btn1" onclick="echo()">显示浏览器版本 with needJS</button>
+
+
+<!--上外边距是 50px
+    右外边距是 5px
+    下外边距是 15px
+    左外边距是 20px-->
+
+<button id="btn2" onclick="dynamicjq()">显示浏览器版本 with dynamic insert</button>
+
+<div style="margin-top:30px">
+	
+	注：第一个按钮，第一次点击，就能输出浏览器版本，第二个则需要再次点击才能工作。
+</div>
+
+</div>
+
+
+
+<script>
+
+	function echo() {
+		needJS(window.jQuery, "http://www1.pconline.com.cn/js/pc.jquery1.5.js", function() {
+			show();
+			fixBtn();
+		});
+	}
+
+	function fixBtn() {
+		$("#btn2").text("显示浏览器版本 now OKay");
+	}
+
+	function show() {
+		try {
+			alert($.browser.version);
+		} catch (err) {
+			txt = "There was an error on this page.\n\n";
+			txt += "Error description: " + err.message + "\n\n";
+			alert(txt);
+		}
+	}
+	function dynamicjq() {
+		(function() {
+			var jq = document.createElement('script');
+			jq.type = 'text/javascript';
+			jq.async = true;
+			jq.src = 'http://www1.pconline.com.cn/js/pc.jquery1.5.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(jq, s);
+		})();
+
+		show();
+		fixBtn();
+	}
+</script>
+
+</body>
+</html>
