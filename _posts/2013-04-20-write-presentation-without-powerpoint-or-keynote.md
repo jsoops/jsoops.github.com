@@ -25,6 +25,29 @@ tags: [html5, js, ppt, markdown]
 - mdpress
 - HTML5slides
 
+
+----
+
+http://segmentfault.com/q/1010000000189232
+
+
+Shower Presentation Engine http://shwr.me/ 
+
+https://github.com/shower/shower/
+
+ https://github.com/gnab/remark
+
+ http://slides.html5rocks.com/
+
+http://www.presefy.com/#/landing
+
+把ppt传到网站上，在线转换成html5，同时可以用手机遥控你的ppt。用法:投影仪连接打开这个这个网站的电脑，然后手机也打开这个网站，就能用手机遥控了。由于是云端的，后排观众也能用手机打开地址实时观看
+
+
+
+
+----
+
 总体说来，他们都是优秀的 PPT 工具，我悉数收藏在自己的 Wiki 之中，如果一定要排名的话，我的选择：
 
 1. [HTML5slides](http://www.chenzixin.com/demo/slides/)
