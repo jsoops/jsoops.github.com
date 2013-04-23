@@ -5,7 +5,7 @@
 <title></title>
 <meta name="author" content="4what" />
 
-<script type="text/javascript" src="http://www.jsoops.com/assets/themes/christen/js/jquery-1.9.1.min.js"></script>
+<!-- <script type="text/javascript" src="http://www.jsoops.com/assets/themes/christen/js/jquery-1.9.1.min.js"></script> -->
 
 <!--<script type="text/javascript" src="../../js/util.js"></script>-->
 
@@ -28,8 +28,9 @@ $(function() {
 <body>
 
 <div id="box">
-	<input type="button" name="" value="Button1" onclick='alert(jQuery.fn.jquery);' />
-	<input type="button" name="" value="Button2" onclick='getVersion();' />
+	<input type="button" name="" value="Show jQuery Version" onclick='alert(jQuery.fn.jquery);' />
+	<input type="button" name="" value="get Browser version dynamic" onclick='getVersion1();' />
+	<input type="button" name="" value="get Browser version needJS" onclick='getVersion2();' />
 </div>
 
 <script type="text/javascript">
@@ -90,7 +91,7 @@ function dynamic(obj, src, callback) {
 // 	alert("cb3");
 // });
 
-function getVersion() {
+function getVersion1() {
 	alert(1);
 	dynamic(false, "http://www.jsoops.com/assets/themes/christen/js/jquery-1.8.3.min.js", function() {
 		alert(3);
@@ -98,6 +99,18 @@ function getVersion() {
 	});
 	alert(2);
 }
+
+function needJS(E,C,B){B=B||function(){};if(E)return B(false);var $=window.__needJS__||(window.__needJS__=[]),D=$[C]||($[C]={loaded:false,callbacks:[]});if(D.loaded)return B(false);var _=D.callbacks;if(_.push(B)==1){var A=document.createElement("script");A.onload=A.onreadystatechange=function(){var $=A.readyState;if($&&$!="loaded"&&$!="complete")return;D.loaded=true;for(var B=0;B<_.length;B++)_[B](true)};A.src=C;document.getElementsByTagName("head")[0].appendChild(A)}}
+
+function getVersion2() {
+	alert(1);
+	needJS(false, "http://www.jsoops.com/assets/themes/christen/js/jquery-1.8.3.min.js", function() {
+		alert(3);
+		alert("version: " + $.browser.version);
+	});
+	alert(2);
+}
+
 </script>
 
 
