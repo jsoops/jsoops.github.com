@@ -66,6 +66,8 @@ gif 图和背景色配合很好，CSS 用了绝对定位。为了演示效果，
 
 观察了一下 jQuery.show() 的作用原理，它并非修改 LoadingStatus 的 display 为 block，而是直接添加内联样式 display = block，比内部样式有更高的优先级。
 
+这里**赠送**一个华丽的 CSS3 [Loading Demo](/demo/loading/css3.html)。
+
 以下摘自 [W3school CSS 简介](http://www.w3school.com.cn/css/css_intro.asp)
 
 **多重样式将层叠为一个**
