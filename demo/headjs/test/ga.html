@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8"/>
+    <title>SCRIPT via HeadJS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../media/libs/headjs/0.99/head.min.js"></script>
+   
+    <script>
+
+        head.js("http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js", "js/ga.js", "js/site.js", function() {
+                window.location.href = "http://www.baidu.com/";
+            });
+
+    </script>    
+</head>
+<body>
+    <div id="wrap">
+        <div id="nav" class="clear">
+            <a href="">电脑网</a>
+            <a href="">女性网</a>
+            <br />
+        </div>
+        <div id="content">
+            <h1>SCRIPT SRC via HeadJS</h1>
+            <div id="time"><span id="ms"></span>ms</div>
+            <p>
+                Press <strong>CTRL+SHIFT+R</strong> or <strong>CTRL+F5</strong> to reload with an <strong>empty cache</strong> = first impression.
+            </p>
+            <br />
+            <p>
+                <strong>View source</strong> to see how scripts are provided.
+            </p>
+            <p>
+                Time is calculated when <code>window.onload</code> fires.
+            </p>
+            <p>
+                Try with different browsers. The time difference varies a lot.
+            </p>
+            <p class="details">
+                head.js() calls are always separate from the page rendering. Does not matter
+                whether you load on HEAD or on bottom. You can also load programmatically on
+                demand.
+            </p>
+        </div>
+        <div id="footer">
+            by Christen.
+        </div>
+    </div>
+</body>
+</html>
