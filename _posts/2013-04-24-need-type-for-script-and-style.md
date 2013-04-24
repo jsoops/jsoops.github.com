@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "script 和 style 需要声明 type 吗"
+title: "脚本和样式需要声类型吗"
 description: "<p>1. html4 和 xhtml，type is <b>required</b>，建议加上，虽然现代浏览器能容忍你的省略；</p><p>2. html5，你可以省略，故 Emmet 的做法没错。</p>"
 category: javascript
 tags: [javascript, css, w3c]

@@ -53,9 +53,4 @@ tags: [jquery, ui, mobile]
 * Books
 
 
-https://github.com/ded/script.js
-
-http://angularjs.org/
-
-
 
