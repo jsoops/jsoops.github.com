@@ -120,6 +120,7 @@ kbd {
     font-size: 14px;
     color: #050505;
     padding: 10px 20px;
+    cursor: pointer;
     background: -moz-linear-gradient(
         top,
         #ffffff 0%,
