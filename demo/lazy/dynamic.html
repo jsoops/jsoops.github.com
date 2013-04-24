@@ -1,117 +1,118 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Dynamic</title>
-<meta name="author" content="4what" />
-
-<!-- <script type="text/javascript" src="http://www.jsoops.com/assets/themes/christen/js/jquery-1.9.1.min.js"></script> -->
-
-<!--<script type="text/javascript" src="../../js/util.js"></script>-->
-
-
-
-<style type="text/css">
-</style>
-
-<!--
-<script type="text/javascript">
-$(function() {
-
-
-
-});
-</script>
--->
+    <meta charset="utf-8"/>
+    <title>Dynamic</title>
+    <link rel="stylesheet" href="/assets/themes/christen/css/demo.css" />
+     
 </head>
-
 <body>
+    <div id="wrap">
+        <div id="nav" class="clear">
+            <a href="http://www.chenzixin.com/">HOME</a>
+            <a href="http://www.pyivy.com/">PYTHON</a>
+            <a href="http://www.jsoops.com/">JSOOPS</a>
+            <a href="http://www.scalac.com/">SCALAC</a>
+            <br />
+        </div>
+        <div id="content">
+            <h1>Dynamic Load JS</h1>
 
-<div id="box">
-	<input type="button" name="" value="Show jQuery Version" onclick='alert(jQuery.fn.jquery);' />
-	<input type="button" name="" value="get Browser version dynamic" onclick='getVersion1();' />
-	<input type="button" name="" value="get Browser version needJS" onclick='getVersion2();' />
-</div>
+            <hr>
 
-<script type="text/javascript">
+            <input type="button" class="cssbtn" name="" value="Show jQuery Version" onclick='alert(jQuery.fn.jquery);' />
+            <input type="button" class="cssbtn" name="" value="get Browser version dynamic" onclick='getVersion1();' />
+            <input type="button" class="cssbtn" name="" value="get Browser version needJS" onclick='getVersion2();' />
+
+
+
+            <p style="margin-top: 30px;">
+                赵玮参考 needJS 重写的一个版本，相对容易理解。
+            </p>
+            
+        </div>
+        <div id="footer">
+            By Christen. Thanks to Robert Hoffmann.
+        </div>
+    </div>
+
+    <script type="text/javascript">
 function dynamic(obj, src, callback) {
-	callback = callback || new Function();
+    callback = callback || new Function();
 
-	if (obj) {
-		callback();
-		return;
-	}
+    if (obj) {
+        callback();
+        return;
+    }
 
-	window._scripts = window._scripts || {};
+    window._scripts = window._scripts || {};
 
-	window._scripts[src] = window._scripts[src] || {
-		loaded: false,
-		queue: []
-	};
+    window._scripts[src] = window._scripts[src] || {
+        loaded: false,
+        queue: []
+    };
 
-	if (window._scripts[src].loaded) {
-		callback();
-		return;
-	}
+    if (window._scripts[src].loaded) {
+        callback();
+        return;
+    }
 
-	var queue = window._scripts[src].queue;
+    var queue = window._scripts[src].queue;
 
-	if (queue.push(callback) === 1) {
-		var
-		head = document.getElementsByTagName("head")[0],
-		script = document.createElement("script"),
-		state;
+    if (queue.push(callback) === 1) {
+        var
+        head = document.getElementsByTagName("head")[0],
+        script = document.createElement("script"),
+        state;
 
-		script.src = src;
-		//script.type = "text/javascript";
+        script.src = src;
+        //script.type = "text/javascript";
 
-		script.onload = // for Std
-		script.onreadystatechange = // for IE
-			function() {
-				state = script.readyState;
+        script.onload = // for Std
+        script.onreadystatechange = // for IE
+            function() {
+                state = script.readyState;
 
-				//alert(state)
+                //alert(state)
 
-				if (!state || /loaded|complete/.test(state)/* for IE */) {
-					window._scripts[src].loaded = true;
+                if (!state || /loaded|complete/.test(state)/* for IE */) {
+                    window._scripts[src].loaded = true;
 
-					for (var i = 0, l = queue.length; i < l; i++) {
-						queue[i]();
-					}
+                    for (var i = 0, l = queue.length; i < l; i++) {
+                        queue[i]();
+                    }
 
-					script.onload = script.onreadystatechange = null; // for IE
+                    script.onload = script.onreadystatechange = null; // for IE
 
-					//head.removeChild(script);
+                    //head.removeChild(script);
 
-					script = undefined;
-				}
-			};
+                    script = undefined;
+                }
+            };
 
-		head.appendChild(script);
-	}
+        head.appendChild(script);
+    }
 }
 
-
 // dynamic(window.$, "http://4what.github.io/cn/js/jquery/jquery-1.8.3.min.js", function() {
-// 	alert("cb1");
+//  alert("cb1");
 // });
 
 
 function getVersion1() {
-	dynamic(false, "http://www.jsoops.com/assets/themes/christen/js/jquery-1.8.3.min.js", function() {
-		alert("version: " + $.browser.version);
-	});
+    dynamic(false, "http://www.jsoops.com/assets/themes/christen/js/jquery-1.8.3.min.js", function() {
+        alert("version: " + $.browser.version);
+    });
 }
 
 function needJS(E,C,B){B=B||function(){};if(E)return B(false);var $=window.__needJS__||(window.__needJS__=[]),D=$[C]||($[C]={loaded:false,callbacks:[]});if(D.loaded)return B(false);var _=D.callbacks;if(_.push(B)==1){var A=document.createElement("script");A.onload=A.onreadystatechange=function(){var $=A.readyState;if($&&$!="loaded"&&$!="complete")return;D.loaded=true;for(var B=0;B<_.length;B++)_[B](true)};A.src=C;document.getElementsByTagName("head")[0].appendChild(A)}}
 
 function getVersion2() {
-	needJS(false, "http://www.jsoops.com/assets/themes/christen/js/jquery-1.7.2.min.js", function() {
-		alert("version: " + $.browser.version);
-	});
+    needJS(false, "http://www.jsoops.com/assets/themes/christen/js/jquery-1.7.2.min.js", function() {
+        alert("version: " + $.browser.version);
+    });
 }
 
 </script>
-
 </body>
 </html>

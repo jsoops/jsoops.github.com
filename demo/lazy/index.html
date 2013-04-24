@@ -1,77 +1,74 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Lazy Load</title>
-	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
-	<script src="/assets/themes/christen/js/util.min.js"></script>
+    <meta charset="utf-8"/>
+    <title>Lazy Load</title>
+    <link rel="stylesheet" href="/assets/themes/christen/css/demo.css" />
+    <script src="/assets/themes/christen/js/util.min.js"></script>
+     
 </head>
 <body>
+    <div id="wrap">
+        <div id="nav" class="clear">
+            <a href="http://www.chenzixin.com/">HOME</a>
+            <a href="http://www.pyivy.com/">PYTHON</a>
+            <a href="http://www.jsoops.com/">JSOOPS</a>
+            <a href="http://www.scalac.com/">SCALAC</a>
+            <br />
+        </div>
+        <div id="content">
+            <h1>needJS Demo</h1>
 
-<h3>needJS Demo</h3>
+            <hr>
 
-<hr>
+            <button class="cssbtn" id="btn1" onclick="echo();">Show Browser Version with needJS</button>
 
-<div style="margin:50px 5px 15px 20px;">
+            <button  class="cssbtn" id="btn2" onclick="dynamicjq()">Show Browser Version with dynamic insert</button>
 
+            <p style="margin-top: 50px;">注：第一个按钮，第一次点击，就能输出浏览器版本，第二个则需要再次点击才能工作。</p>
+            
+        </div>
+        <div id="footer">
+            By Christen. Thanks to Robert Hoffmann.
+        </div>
+    </div>
+    <script>
 
-<button id="btn1" onclick="echo()">Show Browser Version with needJS</button>
+    alert(jQuery.fn.jquery);
 
+    function echo() {
+        needJS(window.jQuery, "http://www1.pconline.com.cn/js/pc.jquery1.5.js", function() {
+            show();
+            fixBtn();
+        });
+    }
 
-<!--上外边距是 50px
-    右外边距是 5px
-    下外边距是 15px
-    左外边距是 20px-->
+    function fixBtn() {
+        $("#btn2").text("Show Browser Version now OKay");
+    }
 
-<button id="btn2" onclick="dynamicjq()">Show Browser Version with dynamic insert</button>
+    function show() {
+        try {
+            alert($.browser.version);
+        } catch (err) {
+            txt = "There was an error on this page.\n\n";
+            txt += "Error description: " + err.message + "\n\n";
+            alert(txt);
+        }
+    }
+    function dynamicjq() {
+        (function() {
+            var jq = document.createElement('script');
+            jq.type = 'text/javascript';
+            jq.async = true;
+            jq.src = 'http://www1.pconline.com.cn/js/pc.jquery1.5.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jq, s);
+        })();
 
-<div style="margin-top:30px">
-	
-	注：第一个按钮，第一次点击，就能输出浏览器版本，第二个则需要再次点击才能工作。
-</div>
-
-</div>
-
-
-
-<script>
-
-	alert(jQuery.fn.jquery);
-
-	function echo() {
-		needJS(window.jQuery, "http://www1.pconline.com.cn/js/pc.jquery1.5.js", function() {
-			show();
-			fixBtn();
-		});
-	}
-
-	function fixBtn() {
-		$("#btn2").text("Show Browser Version now OKay");
-	}
-
-	function show() {
-		try {
-			alert($.browser.version);
-		} catch (err) {
-			txt = "There was an error on this page.\n\n";
-			txt += "Error description: " + err.message + "\n\n";
-			alert(txt);
-		}
-	}
-	function dynamicjq() {
-		(function() {
-			var jq = document.createElement('script');
-			jq.type = 'text/javascript';
-			jq.async = true;
-			jq.src = 'http://www1.pconline.com.cn/js/pc.jquery1.5.js';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(jq, s);
-		})();
-
-		show();
-		fixBtn();
-	}
+        show();
+        fixBtn();
+    }
 </script>
-
 </body>
 </html>
