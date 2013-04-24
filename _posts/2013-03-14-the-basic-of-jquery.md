@@ -1,90 +1,46 @@
 ---
 layout: post
-title: "jQuery 基础 TBC"
-description: "<p><a href='http://jquery.com/' target='_blank'>http://jquery.com/</a></p><ul><li>jQuery</li><li>jQuery UI</li><li>jQuery Mobile</li><li>Qunit</li><li>Sizzle</li><li>API</li><li>Books</li></ul>"
+title: "jQuery 基础"
+description: "<p>公司里最初推广 jQuery 的，也是孙宾，我在做会议室项目的时候，开始大量应用，再后来，听信谣言，以为真正的技术高手，都是用原生 JavaScript 的，加上写前端代码的机会也不多，故从 1.4.2 以后，就用得很少了。</p><p>前段时间看了玉伯也叫射雕的文章，深有感触，痛定思痛，重头再来。</p>"
 category: jquery
 tags: [jquery, ui, mobile]
 ---
 {% include JB/setup %}
 
-http://jquery.com/
+公司里最初推广 jQuery 的，也是孙宾，我在做会议室项目的时候，开始大量应用，再后来，听信谣言，以为真正的技术高手，都是用原生 JavaScript 的，加上写前端代码的机会也不多，故从 1.4.2 以后，就用得很少了。
 
-http://jquery.com/download/
+前端时间看了[这个文章](https://github.com/lifesinger/lifesinger.github.com/issues/126)，深有感触，痛定思痛，重头再来。
 
-http://code.jquery.com/
+玉伯也叫射雕：
 
+>会原生 JavaScript 不代表什么，懂 jQuery、YUI 等才真正好。怎么这么多人有原生主义情结呢？走出那点小天地，海阔天高。
 
-https://developers.google.com/speed/libraries/
+### 资源
 
-https://developers.google.com/speed/libraries/devguide
+1. [官方网站](http://jquery.com/)
 
-https
+2. [下载地址](http://jquery.com/download/) 各个版本都有
 
-http://www.httpwatch.com/httpgallery/ajax/
+3. [官方 CDN](http://code.jquery.com/) 包括 UI
 
-http://blog.jonathanoliver.com/2010/09/http-and-https-with-google-cdn/
-http://stackoverflow.com/questions/547384/where-do-you-include-the-jquery-library-from-google-jsapi-cdn
+4. [Google CDN](https://developers.google.com/speed/libraries/) [Dev Guide](https://developers.google.com/speed/libraries/devguide)
 
-http://lib.sinaapp.com/
+	我之前一直疑惑，为何从 GitHub 上下载的项目，jQuery 的引用是这样的：
 
-----
+	```html
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	```
+	昨天终于[查清楚了](http://stackoverflow.com/questions/547384/where-do-you-include-the-jquery-library-from-google-jsapi-cdn)：
 
-https://github.com/ded/script.js
+	>By removing this ( I mean "http:"), you don't need to worry about switching between http and https.
 
-http://angularjs.org/
+	>It may look weird, but it’s a perfectly valid src attribute.  All the browser does is infer the protocol from the current location. 
 
-----
+	>[Read more...](http://blog.jonathanoliver.com/2010/09/http-and-https-with-google-cdn/)
 
-style need type?
+5. [Sina CDN](http://lib.sinaapp.com/)
 
-http://stackoverflow.com/questions/7715953/do-we-need-type-text-css-for-link-in-html5
-
-http://www.w3.org/html/wg/drafts/html/master/Overview.html#the-link-element
-
-The type attribute gives the styling language. If the attribute is present, its value must be a valid MIME type that designates a styling language. The charset parameter must not be specified. The default value for the type attribute, which is used if the attribute is absent, is "text/css". [RFC2318]
-
-
-script need type?
-
-xhtml
-
-http://www.w3.org/TR/REC-html40/interact/scripts.html
-
-http://www.w3.org/TR/xhtml1/
-
-http://xhtml.com/en/xhtml/reference/script/
-
-http://www.w3.org/wiki/HTML/Training/Script
-
-
-http://stackoverflow.com/questions/2872037/what-language-types-are-allowed-in-the-html-script-tag
-
-http://stackoverflow.com/questions/6806827/is-script-type-text-javascript-incorrect
-
-http://www.ietf.org/rfc/rfc2616.txt
-
-http://www.w3.org/TR/html5/scripting-1.html#scriptingLanguages
-
-http://www.iana.org/assignments/media-types
-
-html5
-
-http://www.w3.org/TR/html5/scripting-1.html#script
-
-The type attribute gives the language of the script or format of the data. If the attribute is present, its value must be a valid MIME type. The charset parameter must not be specified. The default, which is used if the attribute is absent, is "text/javascript".
-
-
-For HTML5, there's no need to include a type attribute, assuming you're using Javascript.
-
-In HTML 5, just omit the type attribute entirely. It is optional and the default language is JavaScript.
-
-
-
-css type
-
-http://www.w3.org/TR/html4/present/styles.html
-
-http://www.w3.org/TR/REC-html40/present/styles.html#h-14.2.1
+### 组件
 
 ----
 
@@ -95,3 +51,11 @@ http://www.w3.org/TR/REC-html40/present/styles.html#h-14.2.1
 * Sizzle
 * API
 * Books
+
+
+https://github.com/ded/script.js
+
+http://angularjs.org/
+
+
+

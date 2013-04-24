@@ -3,7 +3,7 @@ layout: post
 title: "优化 Jekyll 侧边栏"
 description: "<p>周末在家将 Jekyll 改为两栏结构，当时处理了手机兼容，但后来发现，在低分辨率（屏幕宽度小于 1200 px）和 IE8 下，还有一些显示问题，故今天又抽时间优化了一下。</p><p>其中显隐侧边栏，从思路上做了调整，原来是默认都显示，发现手机 UA ，再隐藏，大多数情况下，都无看到侧边栏的闪烁。现在改为默认隐藏，条件合适，再显示出来。</p><p>到目前为止，IE 7 8 9 10, Firefox, Chrome, Safari, Opera，之下，都有不错的体验，IE 6 下比之前也要好不少。</p>"
 category: jquery
-tags: [css, jquery]
+tags: [css, jquery, jekyll]
 ---
 {% include JB/setup %}
 
