@@ -214,6 +214,7 @@ Object {k: 2}
    		// all done
 	});
 	```
+	[docs](/demo/headjs/index.html)
 
 - [RequireJS](http://requirejs.org/)
 
