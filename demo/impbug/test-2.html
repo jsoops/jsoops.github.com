@@ -1,49 +1,78 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
-	<head>
-		<title>test-2</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<style type="text/css" media="screen">
-		html, body { height:100%; background-color: #ffffff;}
-		body { margin:0; padding:0; overflow:hidden; }
-		#flashContent { width:100%; height:100%; }
-		</style>
-	</head>
-	<body>
-		<div id="flashContent">
-			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="550" height="90" id="test-2" align="middle">
-				<param name="movie" value="test-2.swf" />
-				<param name="quality" value="high" />
-				<param name="bgcolor" value="#ffffff" />
-				<param name="play" value="true" />
-				<param name="loop" value="true" />
-				<param name="wmode" value="window" />
-				<param name="scale" value="showall" />
-				<param name="menu" value="true" />
-				<param name="devicefont" value="false" />
-				<param name="salign" value="" />
-				<param name="allowScriptAccess" value="sameDomain" />
-				<!--[if !IE]>-->
-				<object type="application/x-shockwave-flash" data="test-2.swf" width="550" height="90">
-					<param name="movie" value="test-2.swf" />
-					<param name="quality" value="high" />
-					<param name="bgcolor" value="#ffffff" />
-					<param name="play" value="true" />
-					<param name="loop" value="true" />
-					<param name="wmode" value="window" />
-					<param name="scale" value="showall" />
-					<param name="menu" value="true" />
-					<param name="devicefont" value="false" />
-					<param name="salign" value="" />
-					<param name="allowScriptAccess" value="sameDomain" />
-				<!--<![endif]-->
-					<a href="http://www.adobe.com/go/getflash">
-						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获得 Adobe Flash Player" />
-					</a>
-				<!--[if !IE]>-->
-				</object>
-				<!--<![endif]-->
-			</object>
-		</div>
-	</body>
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Flash Imp Bug Demo2</title>
+    <link rel="stylesheet" href="/assets/themes/christen/css/demo.css" />
+    <script type="text/javascript" src="/assets/themes/christen/swfobject/swfobject.js"></script>
+    <script type="text/javascript">
+
+    // https://code.google.com/p/swfobject/wiki/documentation
+
+        var flashvars = {
+          name1: "hello",
+          name2: "world",
+          name3: "foobar"
+        };
+
+        var params = {
+          menu: "false"
+        };
+
+        var attributes = {
+          id: "myDynamicContent",
+          name: "myDynamicContent"
+        };
+
+swfobject.embedSWF("test-2.swf", "flashContent", "550", "90", "9.0.0","/assets/themes/christen/swfobject/expressInstall.swf", flashvars, params, attributes);
+
+function printImp (value) {
+     document.forms["form1"].output.value += "" + value + "\n";
+}
+
+</script>
+
+</head>
+<body>
+    <div id="wrap">
+        <div id="nav" class="clear">
+            <a href="http://www.chenzixin.com/">HOME</a>
+            <a href="http://www.pyivy.com/">PYTHON</a>
+            <a href="http://www.jsoops.com/">JSOOPS</a>
+            <a href="http://www.scalac.com/">SCALAC</a>
+            <br />
+        </div>
+        <div id="content">
+            <h1>基于时间轴 Bug 已经修复</h1>
+
+            <hr>
+
+            <div id="flashContent">
+                <p>Alternative content</p>
+            </div>
+
+            <br><br>
+        <p>模拟控制台输出流量监测请求</p>
+         <form name="form1" onsubmit="return false;">
+            <textarea id="consile" cols="80" rows="10" name="output" readonly="true"></textarea>
+        </form>
+
+            <p style="margin-top: 50px;">
+                刷新页面请
+                <kbd>CTRL</kbd>
+                +
+                <kbd>SHIFT</kbd>
+                +
+                <kbd>R</kbd>
+               或者
+                <kbd>CTRL</kbd>
+                +
+                <kbd>F5</kbd>
+                以清除缓存
+            </p>
+
+        </div>
+        <div id="footer">By Christen. Thanks to Robert Hoffmann.</div>
+    </div>
+</body>
 </html>
