@@ -20,15 +20,21 @@
         };
 
         var attributes = {
-          id: "myDynamicContent",
-          name: "myDynamicContent"
+          // http://www.w3schools.com/tags/tag_object.asp
+          id: "pconline_ad_banner_1",
+          // align: "left",
+          name: "test-1"
         };
 
-swfobject.embedSWF("test-1.swf", "flashContent", "550", "90", "9.0.0","/assets/themes/christen/swfobject/expressInstall.swf", flashvars, params, attributes);
+        swfobject.embedSWF("test-1.swf", "flashContent", "550", "90", "9.0.0","/assets/themes/christen/swfobject/expressInstall.swf", flashvars, params, attributes, outputStatus);
 
-function printImp (value) {
-     document.forms["form1"].output.value += "" + value + "\n";
-}
+        function printImp (value) {
+             document.forms["form1"].output.value += "" + value + "\n";
+        }
+
+        function outputStatus(e) {
+            console.log("e.success = " + e.success +"\ne.id = "+ e.id +"\ne.ref = "+ e.ref);
+        }
 
 </script>
 
