@@ -25,29 +25,6 @@ tags: [html5, js, ppt, markdown]
 - mdpress
 - HTML5slides
 
-
-----
-
-http://segmentfault.com/q/1010000000189232
-
-
-Shower Presentation Engine http://shwr.me/ 
-
-https://github.com/shower/shower/
-
- https://github.com/gnab/remark
-
- http://slides.html5rocks.com/
-
-http://www.presefy.com/#/landing
-
-把ppt传到网站上，在线转换成html5，同时可以用手机遥控你的ppt。用法:投影仪连接打开这个这个网站的电脑，然后手机也打开这个网站，就能用手机遥控了。由于是云端的，后排观众也能用手机打开地址实时观看
-
-
-
-
-----
-
 总体说来，他们都是优秀的 PPT 工具，我悉数收藏在自己的 Wiki 之中，如果一定要排名的话，我的选择：
 
 1. [HTML5slides](http://www.chenzixin.com/demo/slides/)
@@ -72,7 +49,9 @@ http://www.presefy.com/#/landing
 
 我也是最近，才知道这句话：不努力，就会变成 IE 浏览器。
 
-补充：由于过分崇拜乔帮主，我把 mdpress 和 reveal 的主题，改成了 Keynote 风格：
+补记：
+
+由于过分崇拜乔帮主，我把 mdpress 和 reveal 的主题，改成了 Keynote 风格：
 
 ```css
 body {
@@ -82,4 +61,25 @@ body {
 	background: -ms-linear-gradient(top, rgb(0, 0, 0), rgb(99, 97, 116));
 	background: -o-linear-gradient(top, rgb(0, 0, 0), rgb(99, 97, 116));
 }
+```
+
+补记：
+
+留意到 [segmentfault](http://segmentfault.com/q/1010000000189232) 推荐了一个问答，亦是关于 HTML5 PPT 框架，下面是网友的分享	
+
+
+
+- [Shower Presentation Engine](<https://github.com/shower/shower/)
+
+- [A simple markdown-driven slideshow](https://github.com/gnab/remark)
+
+很不错的 HTML5 教程：
+
+<http://slides.html5rocks.com/>
+
+把 PPT 传到网站上，在线转换成 HTML5，同时可以用手机遥控你的 PPT。用法:投影仪连接打开这个这个网站的电脑，然后手机也打开这个网站，就能用手机遥控了。由于是云端的，后排观众也能用手机打开地址实时观看：
+
+<http://www.presefy.com/#/landing>
+
+
 
