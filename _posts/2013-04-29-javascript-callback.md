@@ -43,6 +43,8 @@ mySandwich('ham', 'cheese', function() {
 
 [使用 JSONP 实现跨域通信，第 2 部分: 使用 JSONP、jQuery 和 Yahoo! 查询语言构建 mashup](http://www.ibm.com/developerworks/cn/web/wa-aj-jsonp2/index.html)
 
+注：Mashup 是将多个不同的支持 Web API 的应用进行堆叠而形成的新型 Web 服务。这种新型的基于 Web 的数据集成应用程序正在 Internet  上逐渐兴起。它利用了从外部数据源检索到的内容来创建全新的创新服务，将来自不止一个数据源的内容进行组合，创造出更加增值的服务。
+
 **理解同源策略限制**
 
 >同源策略阻止从一个域上加载的脚本获取或操作另一个域上的文档属性。也就是说，受到请求的 URL 的域必须与当前 Web 页面的域相同。这意味着浏览器隔离来自不同源的内容，以防止它们之间的操作。这个浏览器策略很旧，从 Netscape Navigator 2.0 版本开始就存在。
