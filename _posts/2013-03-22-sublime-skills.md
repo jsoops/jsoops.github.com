@@ -93,6 +93,8 @@ import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_p
 
 * [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) [How to Use](https://tutsplus.com/lesson/livereload/)
 
+* [BracketHighlighter](https://github.com/facelessuser/BracketHighlighter)
+
 
 还有各种格式化 HTML JS 的插件，没有太多的高下之后，找自己喜欢的。
 
