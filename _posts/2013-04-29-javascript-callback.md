@@ -43,7 +43,6 @@ mySandwich('ham', 'cheese', function() {
 
 [使用 JSONP 实现跨域通信，第 2 部分: 使用 JSONP、jQuery 和 Yahoo! 查询语言构建 mashup](http://www.ibm.com/developerworks/cn/web/wa-aj-jsonp2/index.html)
 
-注：Mashup 是将多个不同的支持 Web API 的应用进行堆叠而形成的新型 Web 服务。这种新型的基于 Web 的数据集成应用程序正在 Internet  上逐渐兴起。它利用了从外部数据源检索到的内容来创建全新的创新服务，将来自不止一个数据源的内容进行组合，创造出更加增值的服务。
 
 **理解同源策略限制**
 
@@ -88,6 +87,10 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 	// prints: jsonp1232617941775({"symbol" : "IBM", "price" : "91.42"});
 }
 ```
+
+注：Mashup 是将多个不同的支持 Web API 的应用进行堆叠而形成的新型 Web 服务。这种新型的基于 Web 的数据集成应用程序正在 Internet  上逐渐兴起。它利用了从外部数据源检索到的内容来创建全新的创新服务，将来自不止一个数据源的内容进行组合，创造出更加增值的服务。
+
+参考：[Mashups：Web 应用程序新成员](http://www.ibm.com/developerworks/cn/xml/x-mashups.html)
 
 
 
