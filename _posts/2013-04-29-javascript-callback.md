@@ -90,7 +90,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 
 注：Mashup 是将多个不同的支持 Web API 的应用进行堆叠而形成的新型 Web 服务。这种新型的基于 Web 的数据集成应用程序正在 Internet  上逐渐兴起。它利用了从外部数据源检索到的内容来创建全新的创新服务，将来自不止一个数据源的内容进行组合，创造出更加增值的服务。
 
-参考：[Mashups：Web 应用程序新成员](http://www.ibm.com/developerworks/cn/xml/x-mashups.html)
+参考：[Mashups Web 应用程序新成员](http://www.ibm.com/developerworks/cn/xml/x-mashups.html)
 
 
 

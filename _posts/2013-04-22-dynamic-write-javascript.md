@@ -55,6 +55,25 @@ document.write('<script type="text/javascript" src="http://www1.pconline.com.cn/
 Chrome 下实际测试，DOM 写入成功，src 也成功改变，但是不发起网络请求，故也是错的。
 </blockquote>
 
+修正的方案，来自 IBM：
+
+```html
+
+<script type="text/javascript">
+// This is our function to be called with JSON data
+function showPrice(data) {
+    alert("Symbol: " + data.symbol + ", Price: " + data.price);
+}
+var url = "ticker.js"; // URL of the external script
+// this shows dynamic script insertion
+var script = document.createElement('script');
+script.setAttribute('src', url);
+
+// load the script
+document.getElementsByTagName('head')[0].appendChild(script); 
+</script>
+```
+
 更好的方案，常见于 Google Analytics 监测：
 
 ```javascript
