@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>网页回到顶部 GoTop 按钮自动隐藏</title>
+    <link rel="stylesheet" href="/assets/themes/christen/css/demo.css" />
+
+    <style>
+    html {
+        background-color: #ddd !important;
+    }
+    .top {
+        display: none;
+        background: #fff url(img/top.png) no-repeat 16px 16px;
+        text-indent: -999px;
+        overflow: hidden;
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        top: 85%;
+        right: 30px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        cursor: pointer
+    }
+
+    .top:hover {
+        background-position: 16px 14px
+    }
+    </style>
+
+    <script src="/assets/themes/christen/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script>
+      /**
+      http://www.tanglangxia.com/archives/2647.html
+      */
+        $(function () {
+            // body...
+            var backTop = function(btnId) {
+            var btn = document.getElementById(btnId);
+            var d = document.documentElement;
+            var b = document.body;
+            window.onscroll = set;
+
+            btn.onclick = function() {
+                btn.style.display = "none";
+                window.onscroll = null;
+                this.timer = setInterval(function() {
+                    d.scrollTop -= Math.ceil((d.scrollTop + b.scrollTop) * 0.1);
+                    b.scrollTop -= Math.ceil((d.scrollTop + b.scrollTop) * 0.1);
+                    if ((d.scrollTop + b.scrollTop) == 0) {
+                        clearInterval(btn.timer, window.onscroll = set);
+                    }
+                }, 10);
+            };
+
+            function set() {
+                btn.style.display = (d.scrollTop + b.scrollTop > 500) ? 'block' : "none"
+            }
+          };
+
+          backTop('dynamic-to-top');
+        });
+    
+    </script>
+     
+</head>
+<body>
+    <div id="wrap">
+        <div id="nav" class="clear">
+            <a href="http://www.chenzixin.com/">HOME</a>
+            <a href="http://www.pyivy.com/">PYTHON</a>
+            <a href="http://www.jsoops.com/">JSOOPS</a>
+            <a href="http://www.scalac.com/">SCALAC</a>
+            <br />
+        </div>
+        <div id="content">
+            <h1>网页回到顶部 GoTop 按钮自动隐藏</h1>
+
+            <hr>
+
+<h3>春江花月夜</h3>
+<pre style="line-height:32px">
+春江潮水连波平，
+海上冰轮潋滟生。
+潋滟清波千万里，
+何妨江月漾春明！
+江流宛转绕芳甸，
+月照花林皆似霰;
+空里流霜不可飞，
+汀沙白雾看不见。
+江天一色少纤尘，
+皎月空中孤一轮。
+江畔何人初见月，
+江清初月照新人。
+人生代代无穷已，
+江月年年相似碎。
+不问江天待月人，
+但愁江月送流水。
+白云一片去悠悠，
+青浦江天不胜愁。
+谁可相思云水子？
+何曾今夜向舟楼？
+可知楼上月徘徊，
+应照离人妆镜台。
+玉户帘中卷不去，
+捣衣砧上竟还来。
+此时相望不相闻，
+愿月逐华曾照君。
+鸿雁长飞光怎度，
+鱼龙潜跃水成文。
+昨夜闲潭梦落花，
+可怜春月不还家。
+江流月碎春流尽，
+江畔冰轮犹自斜。
+斜月沉沉迷海雾，
+潇湘石上寻无路。
+不知乘月几人归，
+落月摇昏满江树。
+</pre>
+重复...
+<pre style="line-height:32px">
+春江潮水连波平，
+海上冰轮潋滟生。
+潋滟清波千万里，
+何妨江月漾春明！
+江流宛转绕芳甸，
+月照花林皆似霰;
+空里流霜不可飞，
+汀沙白雾看不见。
+江天一色少纤尘，
+皎月空中孤一轮。
+江畔何人初见月，
+江清初月照新人。
+人生代代无穷已，
+江月年年相似碎。
+不问江天待月人，
+但愁江月送流水。
+白云一片去悠悠，
+青浦江天不胜愁。
+谁可相思云水子？
+何曾今夜向舟楼？
+可知楼上月徘徊，
+应照离人妆镜台。
+玉户帘中卷不去，
+捣衣砧上竟还来。
+此时相望不相闻，
+愿月逐华曾照君。
+鸿雁长飞光怎度，
+鱼龙潜跃水成文。
+昨夜闲潭梦落花，
+可怜春月不还家。
+江流月碎春流尽，
+江畔冰轮犹自斜。
+斜月沉沉迷海雾，
+潇湘石上寻无路。
+不知乘月几人归，
+落月摇昏满江树。
+</pre>
+
+            <p style="margin-top: 50px;">
+                Press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>R</kbd> or <kbd>CTRL</kbd> + <kbd>F5</kbd> to reload with an <strong>empty cache</strong> = first impression.
+            </p>
+             
+            
+        </div>
+        <div><span class="top" id="dynamic-to-top"></span></div>
+        <div id="footer">
+            By Christen. Thanks to Robert Hoffmann.
+        </div>
+    </div>
+</body>
+</html>
