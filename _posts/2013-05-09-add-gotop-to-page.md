@@ -22,3 +22,7 @@ tags: [js, css]
 今天看到百度图片也用了类似的效果，不过未用 CSS3，而是背景图，故能很好的兼容 IE6：
 
 [点这里](/demo/dtop/index.html)
+
+注：不兼容 IE6 !
+
+WordPress 还有一个插件：[Dynamic "To Top" Plugin](http://wordpress.org/extend/plugins/dynamic-to-top/)
