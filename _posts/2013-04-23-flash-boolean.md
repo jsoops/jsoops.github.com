@@ -140,7 +140,7 @@ try
 {
 	if (isControl)
 	{
-		new URLLoader  .load(new URLRequest(tag));
+		new URLLoader().load(new URLRequest(tag));
 		if (ExternalInterface.available)
 		{
 			ExternalInterface.call("printImp", tag);
