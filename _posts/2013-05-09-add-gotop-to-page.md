@@ -7,6 +7,8 @@ tags: [js, css]
 ---
 {% include JB/setup %}
 
+本地环境错乱，可能永久停止更新！
+
 现在的网页，结构越来越复杂，高度也越来越长，很多网站为了提升用户体验，都加一个快速回到顶部的 Button，包括 [PConline](http://www.pconline.com.cn/) 在内。
 
 今天从[螳螂虾](http://www.tanglangxia.com/archives/2647.html)上搬来代码，做了一个 Demo:
